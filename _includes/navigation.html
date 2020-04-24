@@ -1,0 +1,9 @@
+<nav class="wrapper">
+    <ul class="navigation-items">
+        {% for navigation in site.data.samplelist.docs %}
+        <li>
+            <a href="{{site.baseurl}}/{{ navigation.url }}">{{ navigation.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>

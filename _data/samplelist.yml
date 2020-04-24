@@ -1,0 +1,9 @@
+docs:
+- title: Homepage
+  url: index
+
+- title: Projects
+  url: projects
+
+- title: About
+  url: about
