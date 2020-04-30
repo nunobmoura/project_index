@@ -1,35 +1,19 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-
-  </div>
-
+<footer>
+    <section>
+        <h3>Newsletter</h3>
+        <form action="#">
+            <input title="Your name" type="text" placeholder="Your name">
+            <input title="Your e-mail" type="text" placeholder="Your e-mail">
+            <a href="#" role="button">Subscribe</a>
+        </form>
+    </section>
+    <section>
+        <h3>Your IndeX</h3>
+        <p>Follow all the topics you care about, and we’ll deliver the best stories for you to your homepage and inbox.
+        </p>
+    </section>
+    <section>
+        <h3>This IndeX</h3>
+        <p>Design and devoleped with Jekyll by <a href="#">Nuno Moura</a></p>
+    </section>
 </footer>

@@ -1,8 +1,10 @@
-<nav class="wrapper">
-    <ul class="navigation-items">
-        {% for navigation in site.data.samplelist.docs %}
+<nav>
+    <ul>
+        {% for navigation in site.data.samplelist.docs offset:1 %}
         <li>
-            <a href="{{site.baseurl}}/{{ navigation.url }}">{{ navigation.title }}</a>
+            <a href="{{site.baseurl}}/{{ navigation.url }}">
+                <h4>{{ navigation.title }}</h4>
+            </a>
         </li>
         {% endfor %}
     </ul>
