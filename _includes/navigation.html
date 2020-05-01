@@ -1,10 +1,10 @@
 <nav>
     <ul>
-        {% for navigation in site.data.samplelist.docs offset:1 %}
+        {% for navigation in site.data.navlists.main-nav offset:1 %}
         <li>
-            <a href="{{site.baseurl}}/{{ navigation.url }}">
-                <h4>{{ navigation.title }}</h4>
-            </a>
+            <h4>
+                <a href="{{site.baseurl}}/{{ navigation.url }}">{{ navigation.title }}</a>
+            </h4>
         </li>
         {% endfor %}
     </ul>

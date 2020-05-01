@@ -1,0 +1,4 @@
+@mixin header {
+    box-shadow: 0px 0px 50px $dark-10;
+    backdrop-filter: blur(15px);
+}

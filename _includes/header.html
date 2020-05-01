@@ -1,5 +1,7 @@
 <header>
-    <img src="assets/img/logo.svg" alt="Site logo">
+    <a href="{{ site.baseurl }}/">
+        <img src="assets/img/logo.svg" alt="Site logo">
+    </a>
     {%- include navigation.html -%}  <!-- para desktop -->
     <form action="#">  <!-- search -->
         <input title="Search" type="text" placeholder="Search">
@@ -11,13 +13,15 @@
         <img src="assets/img/profile-image.png" alt="">  <!-- mudar src por JS -->
     </button>
     <div>  <!-- profile menu -->
-        <img src="assets/img/profile.png" alt="Image alternative text">
-        <h3>Profile Name</h3>
-        <h4><a href="#">Profile</a></h4>
-        <h4><a href="#">Settings</a></h4>
-        <h4><a href="#">My collections</a></h4>
+
+        {% for profile in site.data.user.profile01 %}
+            <img src="assets/img/{{ profile.image }}" alt="User profile image">
+            <h3>{{ profile.name }}</h3>
+        {% endfor %}
+        
         {%- include navigation.html -%}  <!-- para mobile -->
-        <a href="#" role="button">Start writing</a>
+        
+        {%- include btn_nav.html -%}
     </div>
-    <a href="#" role="button">Start writing</a>
+    {%- include btn_nav.html -%}
 </header>
