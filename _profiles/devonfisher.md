@@ -1,4 +1,5 @@
 ---
+layout: profile
 title: Devon Fisher
 image: devonfisher.png
 date: 2019-04-28
