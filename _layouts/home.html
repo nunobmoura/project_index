@@ -7,6 +7,14 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
+  <ul>
+    {% for authors in site.profiles %}
+      <li>
+        <a href="{{ site.baseurl }}{{ authors.url }}">{{ authors.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
   {{ content }}
 
   {%- if site.posts.size > 0 -%}

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<h5>{{ page.date | date: "%b %Y" }}</h5>
+
+{{ content }}
+
+{% assign author = page.title %}
+<ul>
+    {% for articles in site.posts %}
+        {% if articles.author == author %}
+        <li>
+            <h3>{{ articles.title }}</h3>
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>
