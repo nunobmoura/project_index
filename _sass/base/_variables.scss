@@ -5,6 +5,7 @@ $desktop: 1200px;
 
 /*  ---  neutrals  ---  */
 $light: #fff;
+$light-85: rgba(255, 255, 255, 0.85);
 $light-50: rgba(255, 255, 255, 0.5);
 
 $middle: #B2B7C0;
@@ -21,3 +22,14 @@ $error: #FF9191;
 
 /*  ---  gradients  ---  */
 $gradient: linear-gradient(35deg, rgba(40, 40, 46, 0.7) 0%, rgba(90, 132, 242, 0.7) 100%);
+
+/*  ---  spacing  ---  */
+$xs: 8px;
+$s: 16px;
+$m: 32px;
+$l: 48px;
+$xl: 64px;
+$xxl: 80px;
+
+/*  ---  z-index  ---  */
+$top: 2;

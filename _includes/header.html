@@ -1,27 +1,43 @@
 <header>
-    <a href="{{ site.baseurl }}/">
-        <img src="assets/img/logo.svg" alt="Site logo">
-    </a>
-    {%- include navigation.html -%}  <!-- para desktop -->
-    <form action="#">  <!-- search -->
-        <input title="Search" type="text" placeholder="Search">
-        <button>
-            <!-- svg - icon de search -->
-        </button>
-    </form>
-    <button>  <!-- profile button -->
-        <img src="assets/img/profile-image.png" alt="">  <!-- mudar src por JS -->
-    </button>
-    <div>  <!-- profile menu -->
+    <!-- LOGO -->
+    <div class="wrapper_nav">
+        <a href="{{ site.baseurl }}/">
+            {%- include logo.html -%}
+        </a>
+        {%- include navigation.html -%}
+    </div>
 
-        {% for profile in site.data.user.profile01 %}
+    <!-- RIGHT SIDE -->
+    <div class="wrapper_actions">
+
+        <!-- SEARCH -->
+        <lable class="lable" action="#">
+            <input title="Search" type="text" placeholder="Search" class="search">
+                <a role="button">
+                    {% include search_icon.html %}
+                </a>
+        </lable>
+
+        <!-- PROFILE AND MENU -->
+        <a role="button" class="profile" onclick="action()">
+            {% for profile in site.data.user.profile %}
+                <img src="assets/img/{{ profile.image }}" alt="" class="profile-img"> <!-- mudar src por JS -->
+            {% endfor %}
+        </a>
+
+        <!-- BTN WRITING -->
+        {%- include btn_create.html -%}
+    </div>
+
+    <!-- DROPDOWN MENUN-->
+    <div class="profile_menu">
+        {% for profile in site.data.user.profile %}
             <img src="assets/img/{{ profile.image }}" alt="User profile image">
             <h3>{{ profile.name }}</h3>
         {% endfor %}
-        
-        {%- include navigation.html -%}  <!-- para mobile -->
-        
-        {%- include btn_nav.html -%}
+        <!--Profile, Settings, Collection-->
+        {%- include navigation.html -%}
+        {%- include btn_create.html -%}
     </div>
-    {%- include btn_nav.html -%}
+
 </header>
