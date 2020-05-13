@@ -19,3 +19,10 @@ plugins:
 collections:
   profiles:
     output: true
+    permalink: /:title
+  
+  categories:
+    output: true
+    permalink: /:title
+
+permalink: /:slug
