@@ -20,9 +20,7 @@
 
         <!-- PROFILE AND MENU -->
         <a role="button" class="profile" onclick="action()">
-            {% for profile in site.data.user.profile %}
-                <img src="assets/img/{{ profile.image }}" alt="" class="profile-img"> <!-- mudar src por JS -->
-            {% endfor %}
+            {%- include user.html -%}
         </a>
 
         <!-- BTN WRITING -->
@@ -31,10 +29,8 @@
 
     <!-- DROPDOWN MENUN-->
     <div class="profile_menu">
-        {% for profile in site.data.user.profile %}
-            <img src="assets/img/{{ profile.image }}" alt="User profile image">
-            <h3>{{ profile.name }}</h3>
-        {% endfor %}
+        {%- include user.html -%}
+        <h3><a href="#">Sign Up</a> | <a href="#">Log In</a></h3>
         <!--Profile, Settings, Collection-->
         {%- include navigation.html -%}
         {%- include buttons/btn_create.html -%}

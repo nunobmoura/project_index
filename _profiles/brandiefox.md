@@ -1,8 +1,7 @@
 ---
 layout: profile
-title: Brandie Fox
-image: brandiefox.png
-date: 2018-05-19
-permalink: /:title
+author: Brandie Fox
+image: brandiefox.jpg
+date: 2019-12-28
 ---
-**Brandie Fox** lorem ipsum dolor sit amet consectetur, adipisicing elit.
+User Experience Researcher - "Social Networks with UX strategies" Revit Autodesk Technician

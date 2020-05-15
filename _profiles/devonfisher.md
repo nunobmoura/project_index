@@ -1,8 +1,7 @@
 ---
 layout: profile
-title: Devon Fisher
-image: devonfisher.png
-date: 2019-04-28
-permalink: /:title
+author: Devon Fisher
+image: devonfisher.jpg
+date: 2018-10-31
 ---
-**Devon Fisher** lorem ipsum dolor sit amet consectetur, adipisicing elit.
+Designing for Prosperity, Building Design-Led Orgs, Certified Service Design Trainer (SDN), TEDx speaker
