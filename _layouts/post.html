@@ -2,30 +2,53 @@
 layout: default
 ---
 <article>
+
   <section>
-    <img src="assets/img/{{ page.author | downcase | remove: " "  }}/{{ page.img_header }}" alt="Image from {{ page.title }}">
-    <h4>{{ page.author }}</h4>
+    <img src="assets/img/{{ page.author | downcase | remove: ' ' }}/{{ page.img_header }}" alt="Image from {{ page.title }}">
+    <div class="wrapper_author">
+      {%- for writer in site.profiles -%}
+        {%- if writer.author == page.author -%}
+          <img src="assets/img/{{ writer.author | downcase | remove: ' ' }}/{{ writer.image }}" alt="">
+          <h4><a href="{{ site.baseurl }}{{ writer.url }}">{{ page.author }}</a></h4>
+          <h5>{{ page.date | date: "%b %Y" }}</h5>
+          {%- include buttons/btn_follow.html -%}
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
   </section>
+
   <section>
     <h2>{{ page.title }}</h2>
 
     {{ content }}
 
     {%- for catg in page.categories -%}
-    <a href="#">{{ catg }}</a>
+      {%- for category in site.categories -%}
+        {%- if catg == category.title -%}
+          <a href="{{ site.baseurl }}{{ category.url }}" class="catg_article">{{ catg }}</a>
+        {%- endif -%}
+      {%- endfor -%}
     {%- endfor -%}
   </section>
+
   <aside>
     {%- for writer in site.profiles -%}
-    {% if writer.title == page.author %}
-    <h2>More from <a href="{{ site.baseurl }}{{ writer.url }}">{{ page.author }}</a></h2>
-    {% endif %}
+      {%- if writer.author == page.author -%}
+        <h2>More from <a href="{{ site.baseurl }}{{ writer.url }}">{{ page.author }}</a></h2>
+      {%- endif -%}
     {%- endfor -%}
 
-    {%- for related in site.posts -%}
-    {% if related.title != page.title and related.author == page.author %}
-    <h3><a href="{{ site.baseurl }}/{{ related.url }}">{{ related.title }}</a></h3>
-    {% endif %}
+    {%- for others in site.posts -%}
+      {%- if others.title != page.title and others.author == page.author -%}
+      <article class="wrapper_card">
+        <a href="{{ site.baseurl }}/{{ others.url }}">
+          <div class="card_img" style="background-image: url('assets/img/{{ others.author | downcase | remove: ' ' }}/{{ others.img_header }}'); width: 100vw; height: 20vh;"></div><!---->
+          <h5>{{ others.categories | first }}</h5>
+          <h4>{{ others.title }}</h4>
+        </a>
+      </article>
+      {%- endif -%}
     {%- endfor -%}
   </aside>
+
 </article>
