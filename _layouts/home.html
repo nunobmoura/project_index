@@ -2,41 +2,65 @@
 layout: default
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+{{ content }}
 
-  <ul>
-    {% for authors in site.profiles %}
-      <li>
-        <a href="{{ site.baseurl }}{{ authors.url }}">{{ authors.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  {{ content }}
-
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
+<section>
+  <h2>Highlights</h2>
+  {%- assign counter = 0 -%}
+  {%- for highlight in site.posts -%}
+    {%- if highlight.highlight == true -%}
+      {%- assign counter = counter | plus: 1 -%}
+      {%- if counter <= 1 -%}
+        <article class="card_m_highligh">
+          <a href="{{ site.baseurl }}{{ highlight.url }}">
+            <div class="img_m_highligh" style="background-image: url('assets/img/{{ others.author | downcase | remove: ' ' }}/{{ others.img_header }}');"></div>
+            <h5>{{ highlight.categories[0] }} - {{ highlight.author }}</h5>
+            <h2>{{ highlight.title }}</h2>
+            <p>{{ highlight.content | truncatewords: 15 }}</p>
           </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
+        </article>
+      {%- elsif counter <= 4 -%}
+        <article  class="card_highligh">
+          <a href="{{ site.baseurl }}{{ highlight.url }}">
+            <div class="img_highligh" style="background-image: url('assets/img/{{ others.author | downcase | remove: ' ' }}/{{ others.img_header }}');"></div>
+            <h5>{{ highlight.categories[0] }} - {{ highlight.author }}</h5>
+            <h4>{{ highlight.title }}</h4>
+          </a>
+        </article>
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+</section>
+
+<section>
+  <h2>Recents</h2>
+  {%- assign counter = 0 -%}
+  {%- for article in site.posts -%}
+    {%- if article.highlight != true -%}
+      {%- assign counter = counter | plus: 1 -%}
+      {%- if counter <= 6 -%}
+        <article class="card_recents">
+          <a href="{{ site.baseurl }}{{ article.url }}">
+            <div class="img_recents" style="background-image: url('assets/img/{{ others.author | downcase | remove: ' ' }}/{{ others.img_header }}');"></div>
+            <h5>{{ article.categories[0] }} - {{ article.author }}</h5>
+            <h4>{{ article.title }}</h4>
+          </a>
+        </article>
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+</section>
+
+<section>
+  <h2>Categories</h2>
+  <ul>
+    {% assign sortedCategories = site.categories | sort: 'title' %}
+    {%- for category in sortedCategories -%}
+      <li class="card_category">
+        <div class="img_category" style="background-image: url('assets/img/categories/{{ category.img }}');">
+          <h3>{{ category.title }}</h3>
+        </div>
       </li>
-      {%- endfor -%}
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
-
-</div>
+    {%- endfor -%}
+  </ul>
+</section>

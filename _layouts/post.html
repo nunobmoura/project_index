@@ -42,7 +42,7 @@ layout: default
       {%- if others.title != page.title and others.author == page.author -%}
       <article class="wrapper_card">
         <a href="{{ site.baseurl }}/{{ others.url }}">
-          <div class="card_img" style="background-image: url('assets/img/{{ others.author | downcase | remove: ' ' }}/{{ others.img_header }}'); width: 100vw; height: 20vh;"></div><!---->
+          <div class="card_img" style="background-image: url('assets/img/{{ others.author | downcase | remove: ' ' }}/{{ others.img_header }}');"></div>
           <h5>{{ others.categories | first }}</h5>
           <h4>{{ others.title }}</h4>
         </a>
