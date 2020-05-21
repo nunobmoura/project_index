@@ -1,17 +1,18 @@
 ---
-title: 5 principles for better designer - developer collaboration
 layout: post
+title: "5 principles for better designer-developer collaboration"
 author: Philip Edwards
-img_header: 5principles.jpg
+img_header: mbfd9bsrroX9ktZ.jpg
 categories:
     - User Experience
     - Product Design
     - Software
     - Startup
     - Visual design
-date: 2019-03-04
+date: 2020-01-03
+origin: "https://uxdesign.cc/5-principles-for-better-designer-developer-collaboration-36b4094887db"
+# UX, product design, software development, startup, visual design
 ---
-
 Humans love step-by-step tutorials. As the editor of a design publication myself, it’s not uncommon to see articles such as “The 10 Steps to the Perfect Developer Handoff” or “The Do’s and Don’ts of Documenting Your Designs.” They get a lot of traction with an audience of designers looking for guidance before executing some of their day-to-day tasks. Most of these guides include tactical tips on how to label design files, organize folders, or examples of best-in-class documentation that are proven to work for 10 out of 10 teams out there.
 
 > Prescriptive guides on how to hand off designs to developers are easy to follow and cross out from one’s list. But are they future-proof enough?
@@ -61,4 +62,4 @@ Not everything is in your control as a designer. The only certainty is change. B
 
 ### Design is a team sport
 
-[The old stereotype of the “rockstar designer” is (thankfully) disappearing.](https://uxdesign.cc/design-as-a-team-sport-a08407beffdd) As digital teams grow and projects become more complex, designers are being valued for their collaboration skills and team enablement rather than specific deliverables. Defining the principles of how we want to handle collaboration inside our teams is the first step towards being more intentional in our practice.
+[The old stereotype of the “rockstar designer” is (thankfully) disappearing.](https://uxdesign.cc/design-as-a-team-sport-a08407beffdd "Design as a team sport") As digital teams grow and projects become more complex, designers are being valued for their collaboration skills and team enablement rather than specific deliverables. Defining the principles of how we want to handle collaboration inside our teams is the first step towards being more intentional in our practice.

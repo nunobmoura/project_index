@@ -3,3 +3,14 @@
 @import "components/components-index";
 
 @import "layout/layout-index";
+
+article {
+    a {
+        div {
+            width: 350px;
+            height: 200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}

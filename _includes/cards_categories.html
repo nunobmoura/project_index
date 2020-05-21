@@ -1,10 +1,12 @@
 <ul>
-    {% assign sortedCategories = site.categories | sort: 'title' %}
-    {%- for category in sortedCategories -%}
-      <li class="card_category">
+  {% assign sortedCategories = site.categories | sort: 'title' %}
+  {%- for category in sortedCategories -%}
+    <li class="card_category">
+      <a href="{{ site.baseurl }}{{ category.url }}">
         <div class="img_category" style="background-image: url('assets/img/categories/{{ category.img }}');">
           <h3>{{ category.title }}</h3>
         </div>
-      </li>
-    {%- endfor -%}
-  </ul>
+      </a>
+    </li>
+  {%- endfor -%}
+</ul>
