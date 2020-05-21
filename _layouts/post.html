@@ -8,8 +8,8 @@ layout: default
     <div class="wrapper_author">
       {%- for writer in site.profiles -%}
         {%- if writer.author == page.author -%}
-          <img src="assets/img/{{ writer.author | downcase | remove: ' ' }}/{{ writer.image }}" alt="">
-          <h4><a href="{{ site.baseurl }}{{ writer.url }}">{{ page.author }}</a></h4>
+          <img src="assets/img/{{ writer.author | downcase | remove: ' ' }}/{{ writer.image }}" alt="{{ page.author }}'s image">
+          <h4><a href="{{ site.baseurl }}{{ writer.url }}" title="Author {{ page.author }}'s page">{{ page.author }}</a></h4>
           <h5>{{ page.date | date: "%b %Y" }}</h5>
           {%- include buttons/btn_follow.html -%}
         {%- endif -%}
@@ -26,7 +26,7 @@ layout: default
       {%- for catg in page.categories -%}
         {%- for category in site.categories -%}
           {%- if catg == category.title -%}
-            <a href="{{ site.baseurl }}{{ category.url }}" class="catg_article">{{ catg }}</a>
+            <a href="{{ site.baseurl }}{{ category.url }}" class="catg_article" title="Category {{ catg }}">{{ catg }}</a>
           {%- endif -%}
         {%- endfor -%}
       {%- endfor -%}
@@ -37,7 +37,7 @@ layout: default
   <aside>
     {%- for writer in site.profiles -%}
       {%- if writer.author == page.author -%}
-        <h2>More from <a href="{{ site.baseurl }}{{ writer.url }}">{{ page.author }}</a></h2>
+        <h2>More from <a href="{{ site.baseurl }}{{ writer.url }}" title="Author {{ page.author }}'s page">{{ page.author }}</a></h2>
       {%- endif -%}
     {%- endfor -%}
 

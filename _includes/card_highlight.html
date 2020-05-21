@@ -1,5 +1,5 @@
 <article class="card_m_highligh">
-  <a href="{{ site.baseurl }}{{ article.url }}">
+  <a href="{{ site.baseurl }}{{ article.url }}" title="Article {{ article.title }}">
     <div class="highligh_{{ include.type }}" style="background-image: url('assets/img/{{ article.author | downcase | remove: ' ' }}/{{ article.img_header }}');"></div>
     <h5>{{ article.categories[0] }} - {{ article.author }}</h5>
     <h2>{{ article.title }}</h2>

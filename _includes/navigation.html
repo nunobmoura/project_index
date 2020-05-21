@@ -3,7 +3,7 @@
         {% for navigation in site.data.navlists.main-nav offset:1 %}
         <li>
             <h4>
-                <a href="{{site.baseurl}}/{{ navigation.url }}">{{ navigation.title }}</a>
+                <a href="{{site.baseurl}}/{{ navigation.url }}" title="{{ navigation.title }}">{{ navigation.title }}</a>
             </h4>
         </li>
         {% endfor %}

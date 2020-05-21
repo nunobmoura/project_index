@@ -2,9 +2,9 @@
     <section>
         <h3>Newsletter</h3>
         <form action="#">
-            <input title="Your name" type="text" placeholder="Your name">
-            <input title="Your e-mail" type="text" placeholder="Your e-mail">
-            <a href="#" role="button">Subscribe</a>
+            <input title="Place your name" type="text" placeholder="Your name" aria-label="Place your name">
+            <input title="Place your e-mail" type="text" placeholder="Your e-mail" aria-label="Place your e-mail">
+            <a href="#" role="button" title="Subscribe to newsletter">Subscribe</a>
         </form>
     </section>
     <section>
@@ -14,6 +14,6 @@
     </section>
     <section>
         <h3>This IndeX</h3>
-        <p>Design and devoleped with Jekyll by <a href="{{ site.linkedin }}">{{ site.author }}</a></p>
+        <p>Design and devoleped with Jekyll by <a href="{{ site.linkedin }}" title="{{ site.author }}'s LinkedIn'">{{ site.author }}</a></p>
     </section>
 </footer>
