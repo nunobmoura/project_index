@@ -8,44 +8,29 @@ layout: default
 
 {% assign author = page.title %}
 
-{%- for article in site.posts -%}
-    {%- if article.author == author -%}
-    {% assign highlight = article.title %}
-        <section>
-            <div class="highlight_img" style="background-image: url('assets/img/{{ article.img_header }}');"></div>
-            <h5><a href="{{ site.baseurl }}/{{ tag }}">{{ article.categories | first }}</a></h5>
-            <h3>{{ article.title }}</h3>
-            <p>{{ article.content | truncatewords: 15 }}</p>
-        </section>
-    {%- break -%}
-    {%- endif -%}
-{%- endfor -%}
 <section>
-    <ul>
-        {%- for articles in site.posts -%}
-            {%- if articles.author == author and articles.title != highlight -%}
-                <article>
-                    <div class="card_img" style="background-image: url('assets/img/{{ articles.img_header }}');"></div>
-                    <h5><a href="{{ site.baseurl }}/{{ tag }}">{{ article.categories | first }}</a></h5>
-                    <h3>{{ articles.title }}</h3>
-                </article>
-            {%- endif -%}
-        {%- endfor -%}
-    </ul>
+    {%- for article in site.posts -%}
+        {%- if article.author == author -%}
+        {% assign highlight = article.title %}
+            {%- include card_highlight.html type="profile" -%}
+        {%- break -%}
+        {%- endif -%}
+    {%- endfor -%}
 </section>
 
-<h1>_____</h1>
+<section>
+    {%- for article in site.posts -%}
+        {%- if article.author == author and article.title != highlight -%}
+            {%- include card_article.html type="regular" -%}
+        {%- endif -%}
+    {%- endfor -%}
+</section>
 
 <aside>
-    <h1>related</h1>
-    <ul>
-        {% for articles in site.related_posts limit:6 %}
-            {% if articles.author != author %}
-            <li>
-                <h3>{{ articles.title }}</h3>
-                <p>{{ articles.author }}</p>
-            </li>
-            {% endif %}
-        {% endfor %}
-    </ul>
+    <h1>Related</h1>
+    {% for article in site.related_posts limit:6 %}
+        {% if article.author != author %}
+            {%- include card_article.html type="regular" -%}
+        {% endif %}
+    {% endfor %}
 </aside>

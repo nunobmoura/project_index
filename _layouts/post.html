@@ -22,13 +22,15 @@ layout: default
 
     {{ content }}
 
-    {%- for catg in page.categories -%}
-      {%- for category in site.categories -%}
-        {%- if catg == category.title -%}
-          <a href="{{ site.baseurl }}{{ category.url }}" class="catg_article">{{ catg }}</a>
-        {%- endif -%}
+    <aside>
+      {%- for catg in page.categories -%}
+        {%- for category in site.categories -%}
+          {%- if catg == category.title -%}
+            <a href="{{ site.baseurl }}{{ category.url }}" class="catg_article">{{ catg }}</a>
+          {%- endif -%}
+        {%- endfor -%}
       {%- endfor -%}
-    {%- endfor -%}
+    </aside>
   </section>
 
   <aside>
@@ -38,15 +40,9 @@ layout: default
       {%- endif -%}
     {%- endfor -%}
 
-    {%- for others in site.posts -%}
-      {%- if others.title != page.title and others.author == page.author -%}
-      <article class="wrapper_card">
-        <a href="{{ site.baseurl }}/{{ others.url }}">
-          <div class="card_img" style="background-image: url('assets/img/{{ others.author | downcase | remove: ' ' }}/{{ others.img_header }}');"></div>
-          <h5>{{ others.categories | first }}</h5>
-          <h4>{{ others.title }}</h4>
-        </a>
-      </article>
+    {%- for article in site.posts -%}
+      {%- if article.title != page.title and article.author == page.author -%}
+        {%- include card_article.html type="regular" -%}
       {%- endif -%}
     {%- endfor -%}
   </aside>

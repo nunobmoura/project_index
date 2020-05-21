@@ -7,26 +7,13 @@ layout: default
 <section>
   <h2>Highlights</h2>
   {%- assign counter = 0 -%}
-  {%- for highlight in site.posts -%}
-    {%- if highlight.highlight == true -%}
+  {%- for article in site.posts -%}
+    {%- if article.highlight == true -%}
       {%- assign counter = counter | plus: 1 -%}
       {%- if counter <= 1 -%}
-        <article class="card_m_highligh">
-          <a href="{{ site.baseurl }}{{ highlight.url }}">
-            <div class="img_m_highligh" style="background-image: url('assets/img/{{ others.author | downcase | remove: ' ' }}/{{ others.img_header }}');"></div>
-            <h5>{{ highlight.categories[0] }} - {{ highlight.author }}</h5>
-            <h2>{{ highlight.title }}</h2>
-            <p>{{ highlight.content | truncatewords: 15 }}</p>
-          </a>
-        </article>
+        {%- include card_highlight.html type="home" -%}
       {%- elsif counter <= 4 -%}
-        <article  class="card_highligh">
-          <a href="{{ site.baseurl }}{{ highlight.url }}">
-            <div class="img_highligh" style="background-image: url('assets/img/{{ others.author | downcase | remove: ' ' }}/{{ others.img_header }}');"></div>
-            <h5>{{ highlight.categories[0] }} - {{ highlight.author }}</h5>
-            <h4>{{ highlight.title }}</h4>
-          </a>
-        </article>
+        {%- include card_article.html type="highlight" -%}
       {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
@@ -39,13 +26,7 @@ layout: default
     {%- if article.highlight != true -%}
       {%- assign counter = counter | plus: 1 -%}
       {%- if counter <= 6 -%}
-        <article class="card_recents">
-          <a href="{{ site.baseurl }}{{ article.url }}">
-            <div class="img_recents" style="background-image: url('assets/img/{{ others.author | downcase | remove: ' ' }}/{{ others.img_header }}');"></div>
-            <h5>{{ article.categories[0] }} - {{ article.author }}</h5>
-            <h4>{{ article.title }}</h4>
-          </a>
-        </article>
+        {%- include card_article.html type="regular" -%}
       {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
@@ -53,14 +34,5 @@ layout: default
 
 <section>
   <h2>Categories</h2>
-  <ul>
-    {% assign sortedCategories = site.categories | sort: 'title' %}
-    {%- for category in sortedCategories -%}
-      <li class="card_category">
-        <div class="img_category" style="background-image: url('assets/img/categories/{{ category.img }}');">
-          <h3>{{ category.title }}</h3>
-        </div>
-      </li>
-    {%- endfor -%}
-  </ul>
+  {%- include cards_categories.html -%}
 </section>
