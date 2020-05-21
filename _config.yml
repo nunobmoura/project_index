@@ -2,9 +2,11 @@ title: INDEX
 email: your-email@example.com
 author: "Nuno Moura"
 linkedin: "https://www.linkedin.com/in/nunobmoura/"
+fabricio_linkedin: "https://www.linkedin.com/in/fabricioteixeira/"
+
 
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur libero iste enim perferendis quaerat iure. Velit laudantium architecto vel sapiente perspiciatis.
+  IndeX is not like any other platform on the internet. The only purpose is to help you find compelling ideas, knowledge, and perspectives. IndeX is home to thousands of independent voices.
 baseurl: "/project_index" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
