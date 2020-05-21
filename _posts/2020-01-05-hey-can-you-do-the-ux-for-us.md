@@ -12,6 +12,7 @@ categories:
 date: 2020-01-05
 origin: "https://uxdesign.cc/hey-can-you-do-the-ux-for-us-432a38eac295"
 # UX, humor, design, user experience, ex design
+highlight: true
 ---
 — Hi, I’m John, UX designer starting today on this project.
 

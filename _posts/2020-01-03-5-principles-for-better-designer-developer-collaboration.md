@@ -12,6 +12,7 @@ categories:
 date: 2020-01-03
 origin: "https://uxdesign.cc/5-principles-for-better-designer-developer-collaboration-36b4094887db"
 # UX, product design, software development, startup, visual design
+highlight: true
 ---
 Humans love step-by-step tutorials. As the editor of a design publication myself, it’s not uncommon to see articles such as “The 10 Steps to the Perfect Developer Handoff” or “The Do’s and Don’ts of Documenting Your Designs.” They get a lot of traction with an audience of designers looking for guidance before executing some of their day-to-day tasks. Most of these guides include tactical tips on how to label design files, organize folders, or examples of best-in-class documentation that are proven to work for 10 out of 10 teams out there.
 

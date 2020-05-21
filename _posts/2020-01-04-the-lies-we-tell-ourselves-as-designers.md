@@ -12,6 +12,7 @@ categories:
 date: 2020-01-04
 origin: "https://uxdesign.cc/the-lies-we-tell-ourselves-as-designers-d4505dc20a92"
 # UX, design, careers, user experience, product design
+highlight: true
 ---
 What we say:
 **“Let’s look at it on Monday first thing in the morning with fresh eyes.”**

@@ -12,6 +12,7 @@ categories:
 date: 2020-01-02
 origin: "https://uxdesign.cc/you-dont-need-to-know-everything-about-ux-9b7abd686ef0"
 # ux, career, user experience, design, interaction design
+highlight: true
 ---
 “You don’t need to know everything about UX”.
 
