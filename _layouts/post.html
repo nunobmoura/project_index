@@ -3,19 +3,17 @@ layout: default
 ---
 <article>
 
-  <section>
-    <img src="assets/img/{{ page.author | downcase | remove: ' ' }}/{{ page.img_header }}" alt="Image from {{ page.title }}">
-    <div class="wrapper_author">
-      {%- for writer in site.profiles -%}
-        {%- if writer.author == page.author -%}
-          <img src="assets/img/{{ writer.author | downcase | remove: ' ' }}/{{ writer.image }}" alt="{{ page.author }}'s image">
-          <h4><a href="{{ site.baseurl }}{{ writer.url }}" title="Author {{ page.author }}'s page">{{ page.author }}</a></h4>
-          <h5>{{ page.date | date: "%b %Y" }}</h5>
-          {%- include buttons/btn_follow.html -%}
-        {%- endif -%}
-      {%- endfor -%}
-    </div>
-  </section>
+  <img src="assets/img/{{ page.author | downcase | remove: ' ' }}/{{ page.img_header }}" alt="Image from {{ page.title }}">
+  <div class="wrapper_author">
+    {%- for writer in site.profiles -%}
+      {%- if writer.author == page.author -%}
+        <img src="assets/img/{{ writer.author | downcase | remove: ' ' }}/{{ writer.image }}" alt="{{ page.author }}'s image">
+        <h4><a href="{{ site.baseurl }}{{ writer.url }}" title="Author {{ page.author }}'s page">{{ page.author }}</a></h4>
+        <h5>{{ page.date | date: "%b %Y" }}</h5>
+        {%- include buttons/btn_follow.html -%}
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
 
   <section>
     <h2>{{ page.title }}</h2>
