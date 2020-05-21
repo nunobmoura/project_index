@@ -23,7 +23,7 @@ One of the most common requests she gets?
 
 > “We would love for our office space to feel more like Google”.
 
-Talent retention is key, especially in tech companies, startups and agencies. When an employee leaves, companies lose **money** (all costs associated with their departure), **time** (recruiting someone new), **knowledge**, team **morale**, **reputation** — it’s quite a long list. When it comes to design and development, companies are competing with Googles and Facebooks of the world for the very same talent and skill set. In a rush to avoid turnover and keep current employees motivated, companies resource to an [ever-growing list of benefits](https://www.techrepublic.com/article/12-tech-companies-with-impressive-benefits/ "12 tech companies with impressive employee benefits"), including good-looking office spaces that make work feel less like work.
+Talent retention is key, especially in tech companies, startups and agencies. When an employee leaves, companies lose **money** (all costs associated with their departure), **time** (recruiting someone new), **knowledge**, team **morale**, **reputation** — it’s quite a long list. When it comes to design and development, companies are competing with Googles and Facebooks of the world for the very same talent and skill set. In a rush to avoid turnover and keep current employees motivated, companies resource to an [ever-growing list of benefits](https://www.techrepublic.com/article/12-tech-companies-with-impressive-benefits/ "12 tech companies with impressive employee benefits"){:target="_blank"}, including good-looking office spaces that make work feel less like work.
 
 > You won’t change your company culture by dropping a ping pong table in the middle of your office.
 

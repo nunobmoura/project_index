@@ -13,7 +13,7 @@ date: 2020-01-08
 origin: "https://uxdesign.cc/wait-do-you-really-want-to-become-a-design-manager-59736d8d1890"
 # ux, startup, product design, visual design
 ---
-As part of the [free mentorship sessions](https://mentorship.uxdesign.cc/ "UX mentorship") I have been running for the past couple of years, there’s one question that frequently comes up:
+As part of the [free mentorship sessions](https://mentorship.uxdesign.cc/ "UX mentorship"){:target="_blank"} I have been running for the past couple of years, there’s one question that frequently comes up:
 
 > “What do I have to do to become a design manager?”
 

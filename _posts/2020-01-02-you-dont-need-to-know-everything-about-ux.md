@@ -50,10 +50,10 @@ A lot of people get overwhelmed with the amount of information, jargon, and tech
 
 Understand your natural abilities as a person, and start from there.
 
-- Do you enjoy talking to people and feel comfortable doing that? Start moderating [user research and user testing sessions](https://uxdesign.cc/user-research-and-user-testing-for-ux/home "User Research and User Testing collection").
-- Do you prefer designing simple, innovative interactions? Start with [wireframing and sketching](https://uxdesign.cc/ux-tools-c2597a005a4e "UX Tools for Wireframing and Prototyping").
-- Do you like numbers and feel comfortable speaking to that? Start getting involved more closely with [analytics and metrics](https://uxdesign.cc/start-with-a-story-and-end-with-the-metrics-902a67fc83 "Start with a story, and end with the metrics").
-- Do you like to write and appreciate how the choice of words can impact the user’s experience? Start partnering with a [professional copywriter](https://uxdesign.cc/storyframes-before-wireframes-starting-designs-in-the-text-editor-ec69db78e6e4 "Storyframes before wireframes") to learn from them.
+- Do you enjoy talking to people and feel comfortable doing that? Start moderating [user research and user testing sessions](https://uxdesign.cc/user-research-and-user-testing-for-ux/home "User Research and User Testing collection"){:target="_blank"}.
+- Do you prefer designing simple, innovative interactions? Start with [wireframing and sketching](https://uxdesign.cc/ux-tools-c2597a005a4e "UX Tools for Wireframing and Prototyping"){:target="_blank"}.
+- Do you like numbers and feel comfortable speaking to that? Start getting involved more closely with [analytics and metrics](https://uxdesign.cc/start-with-a-story-and-end-with-the-metrics-902a67fc83 "Start with a story, and end with the metrics"){:target="_blank"}.
+- Do you like to write and appreciate how the choice of words can impact the user’s experience? Start partnering with a [professional copywriter](https://uxdesign.cc/storyframes-before-wireframes-starting-designs-in-the-text-editor-ec69db78e6e4 "Storyframes before wireframes"){:target="_blank"} to learn from them.
 - Etc, etc, etc.
 
 But make sure you choose a starting point.

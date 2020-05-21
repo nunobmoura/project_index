@@ -62,4 +62,4 @@ Not everything is in your control as a designer. The only certainty is change. B
 
 ### Design is a team sport
 
-[The old stereotype of the “rockstar designer” is (thankfully) disappearing.](https://uxdesign.cc/design-as-a-team-sport-a08407beffdd "Design as a team sport") As digital teams grow and projects become more complex, designers are being valued for their collaboration skills and team enablement rather than specific deliverables. Defining the principles of how we want to handle collaboration inside our teams is the first step towards being more intentional in our practice.
+[The old stereotype of the “rockstar designer” is (thankfully) disappearing.](https://uxdesign.cc/design-as-a-team-sport-a08407beffdd "Design as a team sport"){:target="_blank"} As digital teams grow and projects become more complex, designers are being valued for their collaboration skills and team enablement rather than specific deliverables. Defining the principles of how we want to handle collaboration inside our teams is the first step towards being more intentional in our practice.

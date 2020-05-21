@@ -77,7 +77,7 @@ These should give you enough to focus on for the first 10 years of your career. 
 
 ### The importance of collaboration won’t change
 
-[Design is a team sport](https://trends.uxdesign.cc/2020 "The state of UX in 2020"). While the specific tools you use, your workflow, and the way you collaborate with folks from other disciplines might change, the need for collaboration will always be an important part of your job. Unless you are a design-strategy-technology-team-of-one, you will always depend on other people to get things done as a digital product designer. Multiple hands get work done faster. Multiple perspectives make the work stronger.
+[Design is a team sport](https://trends.uxdesign.cc/2020 "The state of UX in 2020"){:target="_blank"}. While the specific tools you use, your workflow, and the way you collaborate with folks from other disciplines might change, the need for collaboration will always be an important part of your job. Unless you are a design-strategy-technology-team-of-one, you will always depend on other people to get things done as a digital product designer. Multiple hands get work done faster. Multiple perspectives make the work stronger.
 
 > How you collaborate with your peers might change. Why you collaborate won’t.
 

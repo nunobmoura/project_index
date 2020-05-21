@@ -38,7 +38,7 @@ But what if that was the only way you could learn more about a discipline you ha
 
 > Every single UX blog or website that my mentors would send me (“you should add this one to your Google Reader!”) was written in English. Every. Single. One.
 
-Back in 2005, when I started working in UX at a big digital agency in Brazil, content available in Portuguese about our discipline was close to zero. Every single [UX blog or website](https://uxdesign.cc/ux-sites-and-blogs-780a304766ee "UX Sites and Blogs") that my mentors would send me (“you should add this one to your Google Reader!”) was being written in English.
+Back in 2005, when I started working in UX at a big digital agency in Brazil, content available in Portuguese about our discipline was close to zero. Every single [UX blog or website](https://uxdesign.cc/ux-sites-and-blogs-780a304766ee "UX Sites and Blogs"){:target="_blank"} that my mentors would send me (“you should add this one to your Google Reader!”) was being written in English.
 
 Aside from the headache that reading and listening to a foreign language for several hours a week brings, it was also a matter of depth: the smarter the writing, the harder it is for a non-native speaker to understand all the subtleties and smart thinking hidden in between the lines.
 

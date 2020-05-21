@@ -76,7 +76,7 @@ Don’t let miscommunication ruin the meeting, and create unnecessary spin for t
 
 Seriously, would they?
 
-We’re often times too involved in the work and can get caught in a [confirmation bias](https://www.google.com/search?q=confirmation+bias+definition&oq=confirmation+bias&aqs=chrome.1.69i57j0l5.3256j0j1&sourceid=chrome&ie=UTF-8 "confirmation bias definition") loop, where everyone in the room will only reinforce that that is a great idea, without ever questioning whether people would actually use it.
+We’re often times too involved in the work and can get caught in a [confirmation bias](https://www.google.com/search?q=confirmation+bias+definition&oq=confirmation+bias&aqs=chrome.1.69i57j0l5.3256j0j1&sourceid=chrome&ie=UTF-8 "confirmation bias definition"){:target="_blank"} loop, where everyone in the room will only reinforce that that is a great idea, without ever questioning whether people would actually use it.
 
 As Experience Designers, we are responsible for representing the user’s voice in the room. Pull up your personas and challenge your team: “Would Jane, our hard-working single mom that is not very tech-savvy, stop what she’s doing to open our mobile app?”
 

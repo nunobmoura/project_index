@@ -20,7 +20,7 @@ Here’s where I stand as of today:
 
 - I try to **limit the number of icons** displayed on my homepage to the ones I use every day. The rule is simple: if I haven’t used an app for more than 3 days, I move it to another page. The fact I have less information to look at helps reduce cognitive load 100% of the times I unlock my phone.
 - I **removed all red badges** from the homepage icons (except Slack and work email) to reduce anxiety and the feeling that I need to click on certain icons in the first place — because I really don’t. I noticed my phone usage has drastically dropped since I changed that setting.
-- Since I realized I’m often holding my phone with my right hand, I moved icons that I need to access quickly **to the right side of the screen**, so it’s [more easily accessible with my thumb](https://www.lukew.com/ff/entry.asp?1927 "Designing for large screen smartphones"). I don’t really need to open Twitter, Linkedin, or Instagram when I’m walking outside holding my phone with one hand and trying to cross a busy street.
+- Since I realized I’m often holding my phone with my right hand, I moved icons that I need to access quickly **to the right side of the screen**, so it’s [more easily accessible with my thumb](https://www.lukew.com/ff/entry.asp?1927 "Designing for large screen smartphones"){:target="_blank"}. I don’t really need to open Twitter, Linkedin, or Instagram when I’m walking outside holding my phone with one hand and trying to cross a busy street.
 
 The list goes on forever.
 
@@ -70,7 +70,7 @@ Design is all about making decisions that prioritize one metric over another.
 What metrics are important to you?
 
 - **Less time spent: what are the tasks you repeat every day that can be optimized or automated to save you time?**
-From using Buffer to schedule my social media posts, to setting up [if this than that](https://ifttt.com/ "Make your work more productive") recipes that will help me manage the UX Collective; I’m constantly paying attention to time-consuming tasks that are repeated at a certain frequency, and finding ways to automate them or eliminate them altogether.
+From using Buffer to schedule my social media posts, to setting up [if this than that](https://ifttt.com/ "Make your work more productive"){:target="_blank"} recipes that will help me manage the UX Collective; I’m constantly paying attention to time-consuming tasks that are repeated at a certain frequency, and finding ways to automate them or eliminate them altogether.
 - **Less forgetting: how can you reduce the number of times you forget things?**
 Setting monthly reminders to pay the bills, yearly birthday reminders for the people you love, or even daily reminders for more mundane tasks; it only takes a minute, and can save you a lot of frustration and energy later on.
 - **Less decision-making: how can you reduce the number of decisions you have to make throughout the day?**
