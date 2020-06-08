@@ -1,8 +1,8 @@
 <article class="card_m_highligh">
   <a href="{{ site.baseurl }}{{ article.url }}" title="Article {{ article.title }}">
     <div class="highligh_{{ include.type }}" style="background-image: url('assets/img/{{ article.author | downcase | remove: ' ' }}/{{ article.img_header }}');"></div>
-    <h5>{{ article.categories[0] }} - {{ article.author }}</h5>
-    <h2>{{ article.title }}</h2>
+    <p>{{ article.categories[0] }} - {{ article.author }}</p>
+    <h3>{{ article.title }}</h3>
     <p>{{ article.content | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | truncatewords: 20 }}</p>
   </a>
 </article>

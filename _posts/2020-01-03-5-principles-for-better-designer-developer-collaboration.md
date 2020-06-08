@@ -22,7 +22,7 @@ The truth is there are a thousand different ways of organizing files, labeling f
 
 The tools we use change every day. Designers are working in companies of all shapes and sizes, from multiple industries, each with its own unique organizational structure and challenges that greatly influence their workflow, tooling, and processes. Even within the same organization, timelines and team configurations can look drastically different across the many projects we work on.
 
-### Great collaboration is about principles, not tactics
+## Great collaboration is about principles, not tactics
 
 After 15 years in the industry, I’ve seen many iterations of the design-dev workflow. Believe it or not, when I started in design, we used to save local files on our computers containing renderings of our designs. Files would then be thrown over the fence to developers who would have to open them and manually translate our somewhat subjective aesthetic decisions into numbers that could be utilized in their code.
 
@@ -30,7 +30,7 @@ Throughout those years, the way designers and devs collaborate has changed many 
 
 The list that follows outlines my own personal principles as a designer who invests at least a third of his day working with developers iterating and implementing designs. While specific methods and techniques have changed considerably over the years, these principles still resist the challenge of time.
 
-### 1. The developer is your user
+## 1. The developer is your user
 
 > What if we gave the same care and attention to how developers will consume our designs (and design documentation) as we do into how users will?
 
@@ -51,7 +51,7 @@ The team may want to set up a wiki for the project; maybe your documentation is 
 
 In the same way we adapt our design solutions to what users need, we should adapt our design workflow to accommodate the needs of our development partners.
 
-### 2. The only certainty is change
+## 2. The only certainty is change
 
 > Designers need to be flexible. We not only have to flex our process to accommodate different team configurations, but also adapt our workflow as the project unfolds.
 
@@ -61,6 +61,6 @@ The other aspect is the individual developer’s personality. We might be workin
 
 Not everything is in your control as a designer. The only certainty is change. But on every project, you can anticipate changes outside of a designer’s domain that in turn can impact the work: new stakeholders joining the team, abrupt changes in release dates, and unforeseen platform or technology constraints. Learning to identify the invisible collaboration mechanics within a team and to prepare yourself to rapidly adapt your workflow will not only avoid frustrations in the short term, but make you a better collaborator in the long run.
 
-### Design is a team sport
+## Design is a team sport
 
 [The old stereotype of the “rockstar designer” is (thankfully) disappearing.](https://uxdesign.cc/design-as-a-team-sport-a08407beffdd "Design as a team sport"){:target="_blank"} As digital teams grow and projects become more complex, designers are being valued for their collaboration skills and team enablement rather than specific deliverables. Defining the principles of how we want to handle collaboration inside our teams is the first step towards being more intentional in our practice.

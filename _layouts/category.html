@@ -5,6 +5,7 @@ layout: default
     <div class="category_header" style="background-image: url('assets/img/categories/{{ page.img }}');">
         <h1>{{ page.title }}</h1>
     </div>
+    <h2>All articles from {{ page.title }}</h2>
     {%- for article in site.posts -%}
         {%- if article.categories[0] == page.title -%}
             {%- include card_article.html type="regular" -%}

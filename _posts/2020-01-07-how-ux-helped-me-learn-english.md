@@ -48,7 +48,7 @@ And I *had* to do something to change that.
 
 * * *
 
-### Understanding expressions
+## Understanding expressions
 
 - “…and run a ballpark estimate to avoid surprises later on…”
 - “…to set up a touch base with the team every morning…”
@@ -76,7 +76,7 @@ Ultimately, you’re in a journey of learning about people.
 
 * * *
 
-### It’s all about passion
+## It’s all about passion
 
 The same mechanism applies to other aspects of one’s career. Whether you are trying to be fluent in a new language, learn a new prototyping tool, immerse yourself in a new culture, or just trying to understand your users — ultimately it’s all about finding the intersection between your short-term objectives and your long-term passions.
 

@@ -41,7 +41,7 @@ Why are we not doing the same thing with every single aspect of our lives?
 
 Isn’t that exactly what design is?
 
-### Understanding your own use cases
+## Understanding your own use cases
 
 - How many times through the course of a workday do you reach for pen and paper to sketch something out while sitting at your desk?
 - What are the shirts you usually choose for weekdays (when you are in a hurry) vs. weekends (when you may have more time, and feel a little more adventurous)?
@@ -63,7 +63,7 @@ Still, sometimes we forget to apply those same principles to our own life.
 
 * * *
 
-### Defining your personal KPIs
+## Defining your personal KPIs
 
 Design is all about making decisions that prioritize one metric over another.
 
@@ -83,7 +83,7 @@ Look at the world around you with the eyes of a designer. Aren’t there too man
 Wearing the same outfit every day reduces the number of decisions you have to make
 {: .caption}
 
-### Owning your daily experience
+## Owning your daily experience
 
 Being mindful of your own daily experience shows that you care about yourself and others around you. As designers, we spend so much energy thinking about our user’s experience that we forget that, as humans, we deserve better experiences too.
 

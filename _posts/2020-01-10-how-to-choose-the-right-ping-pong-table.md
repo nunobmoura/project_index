@@ -31,7 +31,7 @@ Talent retention is key, especially in tech companies, startups and agencies. Wh
 
 * * *
 
-### “But we’re trying to create a space for people to gather and connect…”
+## “But we’re trying to create a space for people to gather and connect…”
 
 Ideas that might be more effective than a ping pong table:
 
@@ -41,7 +41,7 @@ Ideas that might be more effective than a ping pong table:
 
 * * *
 
-### “But we’re just trying to make work feel less like work…”
+## “But we’re just trying to make work feel less like work…”
 
 Ideas that might be more effective than a ping pong table:
 
@@ -51,7 +51,7 @@ Ideas that might be more effective than a ping pong table:
 
 * * *
 
-### “But we’re just trying to make the office space look cooler…”
+## “But we’re just trying to make the office space look cooler…”
 
 Ideas that might be more effective than a ping pong table:
 
@@ -60,7 +60,7 @@ Ideas that might be more effective than a ping pong table:
 
 * * *
 
-### “But we’re just trying to encourage better teamwork and collaboration…”
+## “But we’re just trying to encourage better teamwork and collaboration…”
 
 Ideas that might be more effective than a ping pong table:
 

@@ -17,7 +17,7 @@ The other day I found myself writing down a list of **5 questions I was asking m
 
 The agency life is extremely fast-paced. Each Experience Designer on my team is simultaneously involved in two or three projects, on average. You can imagine how hard it is for any design manager to keep track of all the nitty-gritty happening across so many projects. Instead of micromanaging the team and giving them instructions that are too tactical or prescriptive (“avoid using carousels”), I’d rather equip them with the right mindset so they can make their own decisions — and simply give them strategic guidance on how they can make smarter contributions to the projects they are already engaging with.
 
-### The questions:
+## The questions:
 - Is this what the project needs?
 - What happens next? And after that? And then what?
 - What’s wrong in this meeting, and how can I help?
@@ -26,7 +26,7 @@ The agency life is extremely fast-paced. Each Experience Designer on my team is 
 
 * * *
 
-### 1. Is this what the project needs?
+## 1. Is this what the project needs?
 
 People aren’t always 100% confident that what they are asking you to do is exactly what the project needs at that point in time. When the project manager, or product manager, or producer comes to you asking for a sitemap, a flow, a persona document — whatever it is — both of you should have a conversation about whether that feels like the right thing to do and the right way to invest your time.
 
@@ -36,7 +36,7 @@ Ask questions and make sure you understand how this specific task fits within th
 
 * * *
 
-### 2. What happens next? And after that? And then what?
+## 2. What happens next? And after that? And then what?
 
 As Experience Designers, our brains have been shaped to think about experiences in a more holistic way. We are less focused on specific UI moments, and more interested in how that one moment connects to other moments in the flow, other entry points and other touch points in that brand’s ecosystem. But not everyone is trained to think in the same way.
 
@@ -57,7 +57,7 @@ Simple questions like these and encouraging the team to collectively answer them
 
 * * * 
 
-### 3. What’s wrong in this meeting, and how can I help?
+## 3. What’s wrong in this meeting, and how can I help?
 
 Experience Designers are (or at least should be) empathy machines. All the years running user testing sessions and observing the gap between what people say versus what they do makes you flex your empathy muscles and become more aware of unspoken human behaviors.
 
@@ -72,7 +72,7 @@ Don’t let miscommunication ruin the meeting, and create unnecessary spin for t
 
 * * *
 
-### 4. Would someone stop what they are doing to use your product?
+## 4. Would someone stop what they are doing to use your product?
 
 Seriously, would they?
 
@@ -82,7 +82,7 @@ As Experience Designers, we are responsible for representing the user’s voice 
 
 * * *
 
-### 5. How can I make this (thing, UI, mockup, slide, workshop) simpler?
+## 5. How can I make this (thing, UI, mockup, slide, workshop) simpler?
 
 UX Designers are working hard all day to create simple, easy-to-use, intuitive experiences that people will use and love. Good design is all about simplicity, removing or combining elements to make the information more concise and easier to digest.
 

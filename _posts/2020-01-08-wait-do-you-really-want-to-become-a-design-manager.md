@@ -39,7 +39,7 @@ That’s why you think your *company* should promote you.
 
 * * *
 
-### “Because I want to become an inspiring leader to other people”
+## “Because I want to become an inspiring leader to other people”
 
 I have some good news for you: being a leader ≠ being a manager.
 
@@ -57,7 +57,7 @@ Now, on to the hard questions:
 
 * * *
 
-### “Because all my colleagues are being promoted and I am not”
+## “Because all my colleagues are being promoted and I am not”
 
 After digging deeper into people’s real motivations for wanting to become a design manager or design lead, it is surprisingly common to find out it has a lot to do with how they compare themselves to other people at their level.
 

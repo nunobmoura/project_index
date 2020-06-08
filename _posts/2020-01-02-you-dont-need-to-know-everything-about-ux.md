@@ -43,7 +43,7 @@ How am I supposed to learn about each one of these tangent disciplines (tech, me
 
 * * *
 
-### The million-dollar advice
+## The million-dollar advice
 
 > You don’t need to learn all of it from the start.
 

@@ -24,7 +24,7 @@ highlight: true
 
 * * *
 
-### “Do” the UX
+## “Do” the UX
 
 **What they meant:** can you help us think through the app’s interaction design, structure and navigation?
 
@@ -53,7 +53,7 @@ A good user experience depends on:
 
 * * *
 
-### “I love the UX you did for that mobile app”
+## “I love the UX you did for that mobile app”
 
 **What they meant:** I love the interface you designed.
 
@@ -63,7 +63,7 @@ A good user experience depends on:
 
 * * *
 
-### “This user interface is missing a little bit of UX”
+## “This user interface is missing a little bit of UX”
 
 **What they meant:** this user interface is hard to use.
 
@@ -73,7 +73,7 @@ UX stands for User Experience. A user’s experience with your product can be go
 
 * * *
 
-### “Hmm, there’s too much UX in this product”
+## “Hmm, there’s too much UX in this product”
 
 **What they meant:** iougarklasjbsdfgaiweoqiuwyrshbe.
 
@@ -81,7 +81,7 @@ UX stands for User Experience. A user’s experience with your product can be go
 
 * * *
 
-### “New course: learn everything about Android UX”
+## “New course: learn everything about Android UX”
 
 **What they meant:** learn a few best practices that will help you make less mistakes when designing app interfaces that will live on Android-powered devices.
 

@@ -65,7 +65,7 @@ Only when you understand, recognize, and accept change is coming, you can future
 - Collaboration
 - Communication
 
-### Design fundamentals won’t change
+## Design fundamentals won’t change
 
 There are certain foundational design principles that will never change. They are the source material for anything you create — no matter if you’re working on a website, a mobile app, an ATM machine, a virtual reality experience, a poster, a TV application, a digital kiosk.
 
@@ -75,7 +75,7 @@ These should give you enough to focus on for the first 10 years of your career. 
 
 * * *
 
-### The importance of collaboration won’t change
+## The importance of collaboration won’t change
 
 [Design is a team sport](https://trends.uxdesign.cc/2020 "The state of UX in 2020"){:target="_blank"}. While the specific tools you use, your workflow, and the way you collaborate with folks from other disciplines might change, the need for collaboration will always be an important part of your job. Unless you are a design-strategy-technology-team-of-one, you will always depend on other people to get things done as a digital product designer. Multiple hands get work done faster. Multiple perspectives make the work stronger.
 
@@ -87,7 +87,7 @@ Get better, smarter, and faster at collaborating. Focus on improving your soft s
 
 * * *
 
-### The power of clear communication won’t change
+## The power of clear communication won’t change
 
 Let’s start this one with a little video. A dad asks their kids to write down instructions on how to make a peanut butter and jelly sandwich — and then he follows their instructions quite literally.
 

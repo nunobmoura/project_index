@@ -1,49 +1,46 @@
 ---
 layout: default
 ---
-<article>
+<img src="assets/img/{{ page.author | downcase | remove: ' ' }}/{{ page.img_header }}" alt="Image from {{ page.title }}">
 
-  <img src="assets/img/{{ page.author | downcase | remove: ' ' }}/{{ page.img_header }}" alt="Image from {{ page.title }}">
+<section>
+  <h1>{{ page.title }}</h1>
+  
   <div class="wrapper_author">
     {%- for writer in site.profiles -%}
       {%- if writer.author == page.author -%}
         <img src="assets/img/{{ writer.author | downcase | remove: ' ' }}/{{ writer.image }}" alt="{{ page.author }}'s image">
-        <h4><a href="{{ site.baseurl }}{{ writer.url }}" title="Author {{ page.author }}'s page">{{ page.author }}</a></h4>
-        <h5>{{ page.date | date: "%b %Y" }}</h5>
+        <p><a href="{{ site.baseurl }}{{ writer.url }}" title="Author {{ page.author }}'s page">{{ page.author }}</a></p>
+        <p>{{ page.date | date: "%b %Y" }}</p>
         {%- include buttons/btn_follow.html -%}
       {%- endif -%}
     {%- endfor -%}
   </div>
 
-  <section>
-    <h2>{{ page.title }}</h2>
-
-    {{ content }}
-
-    <aside>
-      {%- for catg in page.categories -%}
-        {%- for category in site.categories -%}
-          {%- if catg == category.title -%}
-            <a href="{{ site.baseurl }}{{ category.url }}" class="catg_article" title="Category {{ catg }}">{{ catg }}</a>
-          {%- endif -%}
-        {%- endfor -%}
-      {%- endfor -%}
-      {%- include origin.html -%}
-    </aside>
-  </section>
+  {{ content }}
 
   <aside>
-    {%- for writer in site.profiles -%}
-      {%- if writer.author == page.author -%}
-        <h2>More from <a href="{{ site.baseurl }}{{ writer.url }}" title="Author {{ page.author }}'s page">{{ page.author }}</a></h2>
-      {%- endif -%}
+    {%- for catg in page.categories -%}
+      {%- for category in site.categories -%}
+        {%- if catg == category.title -%}
+          <a href="{{ site.baseurl }}{{ category.url }}" class="catg_article" title="Category {{ catg }}">{{ catg }}</a>
+        {%- endif -%}
+      {%- endfor -%}
     {%- endfor -%}
-
-    {%- for article in site.posts -%}
-      {%- if article.title != page.title and article.author == page.author -%}
-        {%- include card_article.html type="regular" -%}
-      {%- endif -%}
-    {%- endfor -%}
+    {%- include origin.html -%}
   </aside>
+</section>
 
-</article>
+<aside>
+  {%- for writer in site.profiles -%}
+    {%- if writer.author == page.author -%}
+      <h2>More from <a href="{{ site.baseurl }}{{ writer.url }}" title="Author {{ page.author }}'s page">{{ page.author }}</a></h2>
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- for article in site.posts -%}
+    {%- if article.title != page.title and article.author == page.author -%}
+      {%- include card_article.html type="regular" -%}
+    {%- endif -%}
+  {%- endfor -%}
+</aside>

@@ -1,23 +1,23 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<h5>{{ page.date | date: "%b %Y" }}</h5>
+<h1>{{ page.author }}</h1>
+<p>{{ page.date | date: "%b %Y" }}</p>
 
 {{ content }}
 
-{% assign author = page.author %}
-
-{%- for article in site.posts -%}
-    {%- if article.author == author -%}
-    {% assign highlight = article.title %}
-        {%- include card_highlight.html type="profile" -%}
-    {%- break -%}
-    {%- endif -%}
-{%- endfor -%}
-
 <section>
-    <h2>Recents</h2>
+    <h2>Latest</h2>
+    {% assign author = page.author %}
+
+    {%- for article in site.posts -%}
+        {%- if article.author == author -%}
+        {% assign highlight = article.title %}
+            {%- include card_highlight.html type="profile" -%}
+        {%- break -%}
+        {%- endif -%}
+    {%- endfor -%}
+
     {%- for article in site.posts -%}
         {%- if article.author == author and article.title != highlight -%}
             {%- include card_article.html type="regular" -%}
