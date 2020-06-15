@@ -1,3 +1,31 @@
 header {
     background: $accent-10;
 }
+
+// search box
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    input {
+        width: 100%;
+        background: none;
+        border: none;
+        border-bottom: 1px solid $dark;
+
+        &:focus {
+            background: hotpink;
+        }
+
+        &::placeholder {
+            color: $middle;
+        }
+    }
+
+    button {
+        background: none;
+        border: none;
+    }
+}

@@ -1,14 +1,16 @@
 <header>
-    <a href="{{ site.baseurl }}/" title="Homepage">
+    <a href="{{ site.baseurl }}/" title="Homepage" aria-label="Index's homepage">
         {%- include logo.html -%}
     </a>
 
     {%- include navigation.html -%}
     
-    <form role='search' action="/" method="get">
-        <input type='text' id='header-search' placeholder="Search"/>
-        <button type='submit'>
-          <span class='visually-hidden'>{% include search_icon.html %}</span>
+    <form role="search" class="search-box">
+        <input type="text" placeholder="Search" aria-label="Type keywords to search"/>
+        <button type="submit" aria-label="Search results">
+            <span class="search_icon">
+              {% include search_icon.html %}
+            </span>
         </button>
     </form>
 
