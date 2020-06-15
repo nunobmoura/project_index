@@ -1,22 +1,79 @@
 header {
-    background: $accent-10;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: $xl;
+    padding: 0 20px;
+    z-index: $posit-1;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background: $light-85;
+    @include header;
+    
+    a {
+        display: inline-block;
+    }
 }
 
-// search box
+.menu-mobile {
+    position: absolute;
+    height: calc(100vh - #{$xl});
+    top: $xl;
+    right: 0;
+    left: 0;
+    padding: $s;
+
+    background: $light;
+
+    transform: translateY(calc(-100% - #{$xl}));
+    transition: transform 0.4s ease-in-out; 
+    z-index: $negat-1;
+
+}
+
+.menu-active {
+    transform: translateY(0%);
+}
+
+nav {
+    position: relative;
+    ul {
+        padding: 0;
+    }
+
+    a {
+        @include h4;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        height: 1px;
+        background: #B2B7C0;
+        bottom: - $s;
+        left: 0;
+        right: 0;
+    }
+}
 
 .search-box {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+
+    padding-top: $m;
 
     input {
         width: 100%;
         background: none;
         border: none;
-        border-bottom: 1px solid $dark;
+        border-bottom: 1px solid $middle;
 
         &:focus {
-            background: hotpink;
+        border-bottom: 2px solid $dark;
         }
 
         &::placeholder {
@@ -28,4 +85,8 @@ header {
         background: none;
         border: none;
     }
+}
+
+@media screen and (min-width: $mobile){
+
 }

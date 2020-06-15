@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap');
+
+html * {
+    font-size: 100%;
+    font-family: "Sarabun", sans-serif;
+}
+
+@mixin h1 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 160%;
+}
+
+@mixin h2 {
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 150%;
+}
+
+@mixin h3 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 150%;
+}
+
+@mixin h3_it {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 150%;
+}
+
+@mixin h4 {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 170%;
+}
+
+@mixin article {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 170%;
+}
+
+@mixin article_bd {
+    @include article;
+    font-weight: 700;
+}
+
+@mixin body {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 170%;
+}
+
+@mixin cap {
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 170%;
+}
+
+@mixin cap_it {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.75rem;
+    line-height: 170%;
+}
+
+@mixin h5 {
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 150%;
+    text-transform: uppercase;
+}

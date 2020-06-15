@@ -3,18 +3,20 @@
         {%- include logo.html -%}
     </a>
 
-    {%- include navigation.html -%}
-    
-    <form role="search" class="search-box">
-        <input type="text" placeholder="Search" aria-label="Type keywords to search"/>
-        <button type="submit" aria-label="Search results">
-            <span class="search_icon">
-              {% include search_icon.html %}
-            </span>
-        </button>
-    </form>
-
     <a href="#" role="button" class="profile" title="Profile">
         {%- include user.html -%}
     </a>
+    <div class="menu-mobile">
+        {%- include navigation.html -%}
+        
+        <form role="search" class="search-box">
+            <input type="text" placeholder="Search" aria-label="Type keywords to search"/>
+            <button type="submit" aria-label="Search results">
+                <span class="search_icon">
+                {% include search_icon.html %}
+                </span>
+            </button>
+        </form>
+    </div>
+
 </header>

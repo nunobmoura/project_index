@@ -5,7 +5,7 @@ $desktop: 1200px;
 
 /*  ---  neutrals  ---  */
 $light: #fff;
-$light-85: rgba(255, 255, 255, 0.85);
+$light-85: rgba(255, 255, 255, 0.9);
 $light-50: rgba(255, 255, 255, 0.5);
 
 $middle: #B2B7C0;
@@ -32,4 +32,7 @@ $xl: 64px;
 $xxl: 80px;
 
 /*  ---  z-index  ---  */
-$top: 2;
+$posit-2: 2;
+$posit-1: 1;
+$negat-1: -1;
+$negat-2: -2;
