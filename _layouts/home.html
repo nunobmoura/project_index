@@ -5,7 +5,7 @@ layout: default
 {{ content }}
 
 <section>
-  <h2>Highlights</h2>
+  <h2 class="breaker">Highlights</h2>
   {%- assign counter = 0 -%}
   {%- for article in site.posts -%}
     {%- if article.highlight == true -%}
@@ -20,7 +20,7 @@ layout: default
 </section>
 
 <section>
-  <h2>Latest</h2>
+  <h2 class="breaker">Latest</h2>
   {%- assign counter = 0 -%}
   {%- for article in site.posts -%}
     {%- if article.highlight != true -%}
@@ -33,6 +33,6 @@ layout: default
 </section>
 
 <section>
-  <h2>Categories</h2>
+  <h2 class="breaker">Categories</h2>
   {%- include cards_categories.html -%}
 </section>

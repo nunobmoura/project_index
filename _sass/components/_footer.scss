@@ -1,3 +1,47 @@
 footer {
     background: $accent-10;
+    
+    section {
+        padding-bottom: $m;
+
+        h2 {
+            padding-bottom: $s;
+        }
+
+        &:first-child {
+            padding-top: $l;
+        }
+
+        &:nth-child(3) { /* Não seleciona com last-child*/
+            padding-bottom: $l;
+        }
+
+        a {
+            white-space: nowrap;
+        }
+    }
+
+    form {
+        max-width: 320px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        a {
+            flex-basis: auto;
+            padding: calc(#{$xs} / 2) $s;
+            margin-top: $xs;
+            border: 1px solid $dark;
+            border-radius: $xl;
+        }
+    }
+
+    input {
+        width: 100%;
+        background: none;
+        border: 1px solid $dark;
+        border-radius: $xs;
+        margin-bottom: $xs;
+        padding-left: $xs;
+    }
 }

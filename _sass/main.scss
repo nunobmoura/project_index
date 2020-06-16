@@ -2,15 +2,4 @@
 
 @import "components/components-index";
 
-@import "layout/layout-index";
-
-article {
-    a {
-        div {
-            width: 300px;
-            height: 200px;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    }
-}
+@import "layout/structure";

@@ -6,3 +6,43 @@
 //     background: $accent-10;
 //     font-size: 2rem;
 // }
+
+main {
+    max-width: 1060px;
+    margin: 0 auto;
+    //background: rgb(150, 150, 187);
+}
+
+main section,
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 $s;
+}
+
+/*
+main section,
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.breaker {
+    padding-top: 50px;
+    background: rgb(154, 175, 154);
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}*/
+
+article {
+    a {
+        div {
+            width: 100%;
+            height: 200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
