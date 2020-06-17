@@ -1,4 +1,4 @@
-<article>
+<article class="card {{ include.type }}">
     <a href="{{ site.baseurl }}{{ article.url }}" title="Article {{ article.title }}">
         <div class="img_{{ include.type }}" style="background-image: url('assets/img/{{ article.author | downcase | remove: ' ' }}/{{ article.img_header }}');"></div>
         <p>{{ article.categories[0] }} - {{ article.author }}</p>

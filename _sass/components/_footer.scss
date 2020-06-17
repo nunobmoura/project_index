@@ -16,8 +16,9 @@ footer {
             padding-bottom: $l;
         }
 
-        a {
+        p a {
             white-space: nowrap;
+            color: $accent;
         }
     }
 

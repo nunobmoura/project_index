@@ -1,0 +1,94 @@
+.card {
+    margin-bottom: $l;
+    div {
+        width: 100%;
+        height: calc(4 * #{$l});
+        border-radius: $xs;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: $s;
+    }
+    &.card_category {
+        margin-bottom: $s;
+        div {
+            height: calc(2 * #{$l});
+        }
+    }
+}
+
+.home {
+    padding-bottom: $s;
+    border-radius: $xs;
+    background: #fff;
+    box-shadow: 0px 7px 20px rgba(15, 15, 89, 0.2);
+    div {
+        border-radius: $xs $xs 0 0;
+        & ~ * {
+            padding: 0 $s;
+        }
+    }
+    .description {
+        display: none;
+    }
+}
+
+.highlight {
+    margin-bottom: $m;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        height: 1px;
+        background: $middle;
+        bottom: - $s;
+        left: 0;
+        right: 0;
+    }
+    &:last-child::before {
+        display: none;
+    }
+    a {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: $s;
+    grid-template-areas: 
+    "img writer writer"
+    "img title title";
+    div {
+        grid-area: img;
+        height: $xxl;
+    }
+    p {
+        grid-area: writer;
+    }
+    h3 {
+        grid-area: title;
+    }
+    }
+}
+
+.wrapper-latest {
+    .regular * {
+        color: $light;
+    }
+}
+
+.img_category {
+    position: relative;
+    h3 {
+        position: absolute;
+        bottom: $s;
+        left: $s;
+        z-index: $posit-1;
+        color: white;
+    }
+    .effect {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: $gradient
+    }
+}
+

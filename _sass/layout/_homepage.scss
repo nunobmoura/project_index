@@ -1,0 +1,23 @@
+.wrapper-latest {
+    position: relative;
+    padding: $m 0;
+    .bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100vw;
+        transform: translateX(- $s);
+        background: $dark;
+        z-index: $negat-1;
+    }
+    h2 {
+        color: $light;
+        padding-bottom: $s;
+    }
+}
+
+.breaker {
+    padding: $l 0 $s 0;
+    // grid-column-start: 1;
+    // grid-column-end: 4;
+}

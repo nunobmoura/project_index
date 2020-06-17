@@ -4,7 +4,7 @@ layout: default
 
 {{ content }}
 
-<section>
+<section class="wrapper-highlight">
   <h2 class="breaker">Highlights</h2>
   {%- assign counter = 0 -%}
   {%- for article in site.posts -%}
@@ -19,7 +19,7 @@ layout: default
   {%- endfor -%}
 </section>
 
-<section>
+<section class="wrapper-latest">
   <h2 class="breaker">Latest</h2>
   {%- assign counter = 0 -%}
   {%- for article in site.posts -%}
@@ -30,9 +30,10 @@ layout: default
       {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
+  <div class="bg"></div>
 </section>
 
-<section>
+<section class="wrapper-categories">
   <h2 class="breaker">Categories</h2>
   {%- include cards_categories.html -%}
 </section>
