@@ -3,10 +3,10 @@
   {%- for category in sortedCategories -%}
     <li class="card card_category">
       <a href="{{ site.baseurl }}{{ category.url }}" title="Category {{ category.title }}">
+        <div class="effect"></div>
         <div class="img_category" style="background-image: url('assets/img/categories/{{ category.img }}');">
-          <h3>{{ category.title }}</h3>
-          <div class="effect"></div>
         </div>
+        <h3>{{ category.title }}</h3>
       </a>
     </li>
   {%- endfor -%}

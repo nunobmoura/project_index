@@ -73,22 +73,26 @@
     }
 }
 
-.img_category {
-    position: relative;
-    h3 {
-        position: absolute;
-        bottom: $s;
-        left: $s;
-        z-index: $posit-1;
-        color: white;
-    }
-    .effect {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-image: $gradient
+.card_category {
+    a {
+        display: block;
+        position: relative;
+        .effect {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: $gradient;
+        }
+        .img_category {
+            mix-blend-mode: multiply;
+        }
+        h3 {
+            position: absolute;
+            bottom: $s;
+            left: $s;
+            color: white;
+        }
     }
 }
-

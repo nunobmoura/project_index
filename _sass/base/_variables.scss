@@ -21,7 +21,7 @@ $accent-10: rgba(90, 132, 242, 0.1);
 $error: #FF9191;
 
 /*  ---  gradients  ---  */
-$gradient: linear-gradient(35deg, rgba(40, 40, 46, 0.7) 0%, rgba(90, 132, 242, 0.7) 100%);
+$gradient: linear-gradient(35deg, #{$dark} 0%, #{$accent} 100%);
 
 /*  ---  spacing  ---  */
 $xs: 8px;
