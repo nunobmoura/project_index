@@ -6,8 +6,8 @@ img_header: zzSkeH7vxZ37FA.jpeg
 categories:
     - Sketch
     - Product Design
-    - Software
-    - Startup
+    - Web Design
+    - Responsive
     - Visual design
 date: 2020-01-05
 origin: "https://uxdesign.cc/hey-can-you-do-the-ux-for-us-432a38eac295"
