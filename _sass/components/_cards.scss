@@ -6,6 +6,7 @@
         border-radius: $xs;
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         margin-bottom: $s;
     }
     &.card_category {
@@ -77,14 +78,6 @@
     a {
         display: block;
         position: relative;
-        .effect {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background-image: $gradient;
-        }
         .img_category {
             mix-blend-mode: multiply;
         }
@@ -95,4 +88,13 @@
             color: white;
         }
     }
+}
+
+.effect {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: $gradient;
 }
