@@ -18,61 +18,14 @@ header {
     }
 }
 
-.menu-mobile {
-    position: absolute;
-    height: calc(100vh - #{$xl});
-    top: $xl;
-    right: 0;
-    left: 0;
-    padding: $s;
-
-    background: $light;
-
-    transform: translateY(calc(-100% - #{$xl}));
-    transition: transform 0.4s ease-in-out;
-    z-index: $negat-1;
-}
-
-.menu-active {
-    transform: translateY(0%);
-}
-
-nav {
-    position: relative;
-    ul {
-        padding: 0;
-
-        li {
-            padding: $xs;
-        }
-    }
-
-    a {
-        @include h4;
-    }
-
-    &::after {
-        position: absolute;
-        content: "";
-        height: 1px;
-        background: $middle;
-        bottom: -$s;
-        left: 0;
-        right: 0;
-    }
-}
-
 .search-box {
     display: flex;
-    justify-content: space-between;
-
-    padding-top: $m;
-
+    justify-content: flex-end;
     input {
-        width: 100%;
         background: none;
         border: none;
         border-bottom: 1px solid $middle;
+        margin-right: $xs;
 
         &:focus {
             border-bottom: 2px solid $dark;
@@ -88,62 +41,82 @@ nav {
         border: none;
     }
 }
-/*
-@media screen and (min-width: 800px) {
+
+@media screen and (min-width: 800px){
     .profile {
         display: none;
     }
+
     .menu-mobile {
-        position: relative;
         display: flex;
-        height: initial;
-        top: initial;
-        right: initial;
-        left: initial;
-
-        background: none;
-
-        transform: none;
-    }
-
-
-
-    nav {
-        position: relative; // ------ mudar --------
-    }
-    &::after {
-        display: none; // o "content: none" não funciona
-    }
-
-
-
-    .search-box {
-        display: flex;
+        width: 100%;
         justify-content: space-between;
+        padding-right: $m;
+        ul {
+            display: flex;
+        }
+    }
+    input {
+        width: 0;
+        transition: width 0.3s;
+    }
+    form:hover input,
+    input:focus {
+        width: 40vw;
+    }
 
-        background: red;
+}
+
+@media screen and (max-width: 800px) { 
+    //apesar de ser mobile first fiz assim para não acrescentar  
+    //demasiadas linhas de código ao "limpar" o menu.
+    .menu-mobile {
+        position: absolute;
+        height: calc(100vh - #{$xl});
+        top: $xl;
+        right: 0;
+        left: 0;
+        padding: $s;
     
-        padding-top: $m;
+        background: $light;
     
-        input {
-            width: 100%;
-            background: none;
-            border: none;
-            border-bottom: 1px solid $middle;
+        transform: translateY(calc(-100% - #{$xl}));
+        transition: transform 0.4s ease-in-out;
+        z-index: $negat-1;
+    }
     
-            &:focus {
-                border-bottom: 2px solid $dark;
-            }
+    .menu-active {
+        transform: translateY(0%);
+    }
     
-            &::placeholder {
-                color: $middle;
+    nav {
+        position: relative;
+        ul {
+            padding: 0;
+    
+            li {
+                padding: $xs;
             }
         }
     
-        button {
-            background: none;
-            border: none;
+        a {
+            @include h4;
+        }
+    
+        &::after {
+            position: absolute;
+            content: "";
+            height: 1px;
+            background: $middle;
+            bottom: -$s;
+            left: 0;
+            right: 0;
+        }
+    }
+    .search-box {
+        padding-top: $m;
+        input {
+            width: 100%;
         }
     }
 }
-*/
