@@ -1,14 +1,5 @@
-body {
-    margin: 0;
-    & * {
-        margin: 0;
-        padding: 0;
-        color: $dark;
-    }
-    a {
-        text-decoration: none;
-    }
-    li {
-        list-style: none;
-    }
+.breaker {
+    padding: $l 0 $s 0;
+    // grid-column-start: 1;
+    // grid-column-end: 4;
 }

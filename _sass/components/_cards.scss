@@ -17,7 +17,8 @@
     }
 }
 
-.home {
+.home,
+.hg-profile {
     padding-bottom: $s;
     border-radius: $xs;
     background: #fff;
@@ -33,7 +34,8 @@
     }
 }
 
-.highlight {
+.highlight,
+.related .regular {
     margin-bottom: $m;
     position: relative;
     &::before {

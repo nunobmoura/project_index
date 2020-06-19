@@ -1,19 +1,26 @@
 ---
 layout: default
 ---
-<h1>{{ page.author }}</h1>
-<p>{{ page.date | date: "%b %Y" }}</p>
+<div class="wrapper-profile">
+    <div class="wrapper-profile-info">
+        <img class="author-img" src="assets/img/{{ page.author | downcase | remove: ' ' }}/{{ page.image }}" alt="{{ page.author }}'s image">
+        {%- include buttons/btn_follow.html -%}
+    </div>
+    <h1>{{ page.author }}</h1>
 
-{{ content }}
+    {{ content }}
+
+    <div class="bg-wrapper"></div>
+</div>
 
 <section>
-    <h2>Latest</h2>
+    <h2 class="breaker">Latest</h2>
     {% assign author = page.author %}
 
     {%- for article in site.posts -%}
         {%- if article.author == author -%}
         {% assign highlight = article.title %}
-            {%- include card_highlight.html type="profile" -%}
+            {%- include card_highlight.html type="hg-profile" -%}
         {%- break -%}
         {%- endif -%}
     {%- endfor -%}
@@ -25,8 +32,8 @@ layout: default
     {%- endfor -%}
 </section>
 
-<aside>
-    <h2>Related</h2>
+<aside class="related">
+    <h2 class="breaker">Related</h2>
     {% for article in site.related_posts limit:6 %}
         {% if article.author != author %}
             {%- include card_article.html type="regular" -%}
