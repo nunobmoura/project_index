@@ -66,3 +66,27 @@
         margin-bottom: $s;
     }
 }
+
+@media screen and (min-width: 800px) {
+    .wrapper-main-post {
+        h1,
+        .wrapper_author,
+        .wrapper-post,
+        .post-aside {
+            grid-column: 2 / 6;
+        }
+    }
+    .more-post {
+        h2 {
+            grid-column: 2 / 6;
+        }
+        .regular {
+            &:nth-child(even) {
+                grid-column: 2 / span 2;
+            }
+            &:nth-child(odd) {
+                grid-column: 4 / span 2;
+            }
+        }
+    }
+}
