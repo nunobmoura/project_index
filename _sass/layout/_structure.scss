@@ -23,10 +23,9 @@ body {
 }
 
 main {
-    max-width: 1060px;
+    max-width: 900px;
     margin: 0 auto;
     margin-top: $xl;
-    //background: rgb(150, 150, 187);
 }
 
 main,
@@ -37,10 +36,10 @@ footer {
     padding: 0 $s;
 }
 
-/*
-main section,
-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 20px;
-}*/
+@media screen and (min-width: 800px){
+    .wrapper-footer {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-column-gap: $m;
+    }
+}

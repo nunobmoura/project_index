@@ -23,7 +23,6 @@ footer {
     }
 
     form {
-        max-width: 320px;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
@@ -46,3 +45,25 @@ footer {
         padding-left: $xs;
     }
 }
+
+.wrapper-footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.active {
+    background: red;
+}
+
+@media screen and (min-width: 800px){
+    .wrapper-footer {
+        padding: $xl 0 $l 0;
+        section {
+            grid-column: span 2;
+            &:first-child {
+                padding-top: 0;
+            }
+        }
+    }
+}
+
