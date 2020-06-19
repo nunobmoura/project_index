@@ -15,3 +15,26 @@
         padding-bottom: $s;
     }
 }
+
+@media screen and (min-width: 800px){
+    .breaker {
+        grid-column: span 6;
+    }
+    .wrapper-highlight {
+        .home {
+            grid-column: span 3;
+            grid-row: span 3;
+        }
+        .highlight {
+            grid-column: span 3;
+        }
+    }
+    .wrapper-latest {
+        .regular {
+            grid-column: span 2;
+        }
+    }
+    .wrapper-categories li {
+        grid-column: span 2;
+    }
+}
