@@ -28,3 +28,11 @@
     }
 }
 
+@media screen and (min-width: 800px){
+    .wrapper-categories {
+        .regular {
+            grid-column: span 2;
+        }
+    }
+}
+

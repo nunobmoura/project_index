@@ -100,3 +100,13 @@
     left: 0;
     background-image: $gradient;
 }
+
+@media screen and (min-width: 800px){
+    .home,
+    .hg-profile {
+        .description {
+            display: block;
+            padding-top: $s;
+        }
+}
+}

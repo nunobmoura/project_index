@@ -39,9 +39,10 @@ footer {
 @media screen and (min-width: 800px){
     .wrapper-highlight,
     .wrapper-latest,
-    .wrapper-categories ul,
+    .wrapper-all-categories ul,
     .wrapper-main-post,
     .more-post,
+    .wrapper-categories,
     .wrapper-footer {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
