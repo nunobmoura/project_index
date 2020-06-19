@@ -22,3 +22,38 @@
         background: $accent-10;
     }
 }
+
+@media screen and (min-width: 800px){
+    .latest {
+        .hg-profile {
+            grid-column: span 6;
+            padding-bottom: 0;
+            a {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: $m;
+                div {
+                    grid-row: span 4;
+                    margin-bottom: 0;
+                    border-radius: $xs 0 0 $xs;
+                    & ~ * {
+                        padding: $s $m 0 0;
+                    }
+                }
+            }
+        }
+        .regular {
+            grid-column: span 2;
+        }
+    }
+    .related {
+        .regular {
+            &:nth-child(even) {
+                grid-column: 1 / span 3;
+            }
+            &:nth-child(odd) {
+                grid-column: 4 / span 3;
+            }
+        }
+    }
+}
