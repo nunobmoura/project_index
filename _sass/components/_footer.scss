@@ -1,62 +1,55 @@
 footer {
     background: $accent-10;
-    
     section {
         padding-bottom: $m;
-
         h2 {
             padding-bottom: $s;
         }
-
         &:first-child {
             padding-top: $l;
         }
-
-        &:nth-child(3) { /* Não seleciona com last-child*/
+        &:nth-child(3) {
             padding-bottom: $l;
         }
-
         p a {
             white-space: nowrap;
-            color: $dark;
-            border-bottom: 0.125rem solid $accent;
-            transition: all 0.1s ease;
-            &:hover {
-                color: $light;
-                background-color: $accent;
-            }
+            @include link-hover;
         }
     }
-
     form {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
         justify-content: flex-end;
     }
-
     input {
         width: 100%;
         background: $light;
         border: 0.125rem solid $dark;
-        border-radius: $xs;
+        @include border-radius;
         margin-bottom: $xs;
         padding-left: $xs;
     }
-
     .subscribe-btn {
+        -ms-flex-preferred-size: auto;
         flex-basis: auto;
     }
 }
 
 .wrapper-footer {
-    max-width: 900px;  // ------- REVER tamanho
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: $desktop) {
     .wrapper-footer {
         padding: $xl 0 $l 0;
         section {
+            -ms-grid-column-span: 2;
             grid-column: span 2;
             &:first-child {
                 padding-top: 0;
@@ -64,4 +57,3 @@ footer {
         }
     }
 }
-

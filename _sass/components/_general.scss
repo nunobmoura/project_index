@@ -1,8 +1,3 @@
-*::selection {
-    background: $accent-75;
-    color: $light;
-}
-
 .breaker {
     position: relative;
     padding-top: $s;
@@ -20,10 +15,10 @@
     }
 }
 
-
-@media screen and (min-width: 800px){
+@media screen and (min-width: $desktop) {
     .breaker {
         padding: 0 0 $s 0;
+        -ms-grid-column-span: 6;
         grid-column: span 6;
         &::after {
             bottom: 1.25rem;

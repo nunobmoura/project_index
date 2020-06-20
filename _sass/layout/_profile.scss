@@ -3,7 +3,11 @@
     padding: $m 0 $l 0;
     &-info {
         padding-bottom: $s;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         .author-img {
             width: $xl;
@@ -14,25 +18,27 @@
     .bg-wrapper {
         position: absolute;
         top: 0;
-        right: - $s;
+        right: -$s;
         bottom: 0;
-        left: - $s;
+        left: -$s;
         z-index: $negat-1;
-
-        // background: $accent-10;
     }
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: $desktop) {
     .latest {
         .hg-profile {
+            -ms-grid-column-span: 6;
             grid-column: span 6;
             padding-bottom: 0;
             a {
+                display: -ms-grid;
                 display: grid;
+                -ms-grid-columns: 1fr $m 1fr;
                 grid-template-columns: 1fr 1fr;
                 grid-column-gap: $m;
                 div {
+                    -ms-grid-row-span: 4;
                     grid-row: span 4;
                     margin-bottom: 0;
                     border-radius: $xs 0 0 $xs;
@@ -43,15 +49,21 @@
             }
         }
         .regular {
+            -ms-grid-column-span: 2;
             grid-column: span 2;
         }
     }
+
     .related {
         .regular {
             &:nth-child(even) {
+                -ms-grid-column: 1;
+                -ms-grid-column-span: 3;
                 grid-column: 1 / span 3;
             }
             &:nth-child(odd) {
+                -ms-grid-column: 4;
+                -ms-grid-column-span: 3;
                 grid-column: 4 / span 3;
             }
         }

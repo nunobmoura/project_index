@@ -1,4 +1,53 @@
+/*  ---  Buttons  ---  */
+@mixin absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/*  ---  Buttons  ---  */
+@mixin btn-border-dark {
+    border: 0.125rem solid $dark;
+    border-radius: $xl;
+    color: $dark;
+}
+
+@mixin btn-border-accent {
+    @include btn-border-dark;
+    border: 0.125rem solid $accent-75;
+}
+
+@mixin btn-hover {
+    border: 0.125rem solid $accent;
+    color: $accent;
+}
+
+/*  ---  Effects  ---  */
 @mixin header {
+    -webkit-box-shadow: 0px 0px 50px $dark-10;
     box-shadow: 0px 0px 50px $dark-10;
+    -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
+}
+
+@mixin card-shadow {
+    -webkit-box-shadow: 0px 7px 20px rgba(15, 15, 89, 0.2);
+    box-shadow: 0px 7px 20px rgba(15, 15, 89, 0.2);
+}
+
+@mixin link-hover {
+    border-bottom: 0.125rem solid $accent;
+    -webkit-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    &:hover {
+        color: $light;
+        background-color: $accent;
+    }
+}
+
+@mixin border-radius {
+    border-radius: $xs;
 }

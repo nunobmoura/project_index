@@ -3,7 +3,7 @@
     div {
         width: 100%;
         height: calc(4 * #{$l});
-        border-radius: $xs;
+        @include border-radius;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -20,9 +20,9 @@
 .home,
 .hg-profile {
     padding-bottom: $s;
-    border-radius: $xs;
     background: #fff;
-    box-shadow: 0px 7px 20px rgba(15, 15, 89, 0.2);
+    @include border-radius;
+    @include card-shadow;
     div {
         border-radius: $xs $xs 0 0;
         & ~ * {
@@ -40,6 +40,7 @@
     position: relative;
     a {
         display: grid;
+        -ms-grid-columns: 1fr $s 1fr $s 1fr;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: $s;
         grid-template-areas:
@@ -91,15 +92,11 @@
 }
 
 .effect {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    @include absolute;
     background-image: $gradient;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: $desktop) {
     .home,
     .hg-profile {
         .description {
@@ -107,6 +104,7 @@
             padding-top: $s;
         }
     }
+    
     .hg-profile {
         div {
             height: auto;

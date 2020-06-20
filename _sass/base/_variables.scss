@@ -1,7 +1,6 @@
 /*  ---  mediaqueries  ---  */
-$mobile: 720px;
-$tablet: 900px;
-$desktop: 1200px;
+$tablet: 600px;
+$desktop: 900px;
 
 /*  ---  neutrals  ---  */
 $light: #fff;
@@ -24,19 +23,19 @@ $error: #FF9191;
 $gradient: linear-gradient(35deg, #{$dark} 0%, #{$accent} 100%);
 
 /*  ---  spacing  ---  */
-$xs: 8px;
-$s: 16px;
-$m: 32px;
-$l: 48px;
-$xl: 64px;
-$xxl: 80px;
+// $xs: 8px;
+// $s: 16px;
+// $m: 32px;
+// $l: 48px;
+// $xl: 64px;
+// $xxl: 80px;
 
-// $xs: 0.5rem;
-// $s: 1rem;
-// $m: 2rem;
-// $l: 3rem;
-// $xl: 4rem;
-// $xxl: 5rem;
+$xs: 0.5rem;
+$s: 1rem;
+$m: 2rem;
+$l: 3rem;
+$xl: 4rem;
+$xxl: 5rem;
 
 /*  ---  z-index  ---  */
 $posit-2: 2;

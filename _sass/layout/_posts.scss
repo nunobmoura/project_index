@@ -2,11 +2,14 @@
     width: 100%;
     max-height: 40vh;
     margin-bottom: $l;
+    -o-object-fit: cover;
     object-fit: cover;
-    box-shadow: 0px 7px 20px rgba(15, 15, 89, 0.2);
+    @include card-shadow;
 }
 
 .wrapper_author {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: $l 0 $m 0;
     img {
@@ -16,7 +19,11 @@
         margin-right: $s;
     }
     .author-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         width: 100%;
     }
@@ -28,7 +35,7 @@
     }
     img {
         width: 100%;
-        border-radius: $xs;
+        @include border-radius;
         margin-top: $l;
     }
     .caption {
@@ -43,7 +50,6 @@
         border-left: 0.25rem solid $accent;
         padding-left: $s;
     }
-
     ul {
         padding: calc(#{$m} - #{$s}) 0 $m $s;
         li {
@@ -51,28 +57,7 @@
         }
     }
     p a {
-        border-bottom: 0.125rem solid $accent;
-        transition: all 0.1s ease;
-        &:hover {
-            color: $light;
-            background-color: $accent;
-        }
-        // position: relative;
-        // &::after {
-        //     content: "";
-        //     position: absolute;
-        //     z-index: $negat-1;
-        //     top: $s;
-        //     left: 0;
-        //     right: 0;
-        //     bottom: 0;
-        //     transition: top 0.1s ease-in-out;
-        //     background-color: $accent;
-        //     opacity: 0.5;
-        // }
-        // &:hover::after {
-        //     top: 0;
-        // }
+        @include link-hover;
     }
 }
 
@@ -85,7 +70,10 @@
     padding-bottom: $s;
     border-bottom: 0.125rem solid $accent;
     .wrapper-catg {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         margin-bottom: $s;
     }
@@ -100,34 +88,43 @@
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: $desktop) {
     .post-img {
         border-radius: $s;
     }
+
     .wrapper-main-post {
         h1,
         .wrapper_author,
         .wrapper-post,
         .post-aside {
+            -ms-grid-column: 2;
+            -ms-grid-column-span: 4;
             grid-column: 2 / 6;
         }
         blockquote {
             margin: $xl 0 $xl $l;
         }
-
         ul {
             padding: calc(#{$m} - #{$s}) 0 $m $m;
         }
     }
+
     .more-post {
         h2 {
+            -ms-grid-column: 2;
+            -ms-grid-column-span: 4;
             grid-column: 2 / 6;
         }
         .regular {
             &:nth-child(even) {
+                -ms-grid-column: 2;
+                -ms-grid-column-span: 2;
                 grid-column: 2 / span 2;
             }
             &:nth-child(odd) {
+                -ms-grid-column: 4;
+                -ms-grid-column-span: 2;
                 grid-column: 4 / span 2;
             }
         }

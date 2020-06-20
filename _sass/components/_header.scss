@@ -5,30 +5,59 @@ header {
     left: 0;
     height: $xl;
     z-index: $posit-1;
-
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-
     background: $light-85;
     @include header;
-
     a {
         padding: 0 $s;
         .logo_light {
+            -webkit-animation-name: coloring;
             animation-name: coloring;
+            -webkit-animation-duration: 3s;
             animation-duration: 3s;
+            -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
         }
+        @-webkit-keyframes coloring {
+            0% {
+                fill: $dark;
+            }
+            20% {
+                fill: $accent;
+            }
+            80% {
+                fill: $accent;
+            }
+            100% {
+                fill: $dark;
+            }
+        }
         @keyframes coloring {
-            0%   {fill: $dark;}
-            20%  {fill: $accent;}
-            80%  {fill: $accent;}
-            100% {fill: $dark;}
-          }
+            0% {
+                fill: $dark;
+            }
+            20% {
+                fill: $accent;
+            }
+            80% {
+                fill: $accent;
+            }
+            100% {
+                fill: $dark;
+            }
+        }
     }
-
     nav a {
+        -webkit-transition: color 0.1s ease;
+        -o-transition: color 0.1s ease;
         transition: color 0.1s ease;
         &:hover {
             color: $accent;
@@ -37,53 +66,63 @@ header {
 }
 
 .search-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     input {
         background: none;
         border: none;
         border-bottom: 0.125rem solid $middle;
         margin-right: $xs;
-
         &:focus {
             border-bottom: 0.125rem solid $dark;
         }
     }
-
     button {
         background: none;
         border: none;
     }
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: $desktop) {
     .profile {
         display: none;
     }
 
     .menu-mobile {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 100%;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         padding-right: $m;
         ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
         }
     }
-    
+
     .search-input {
         width: 0;
+        -webkit-transition: width 0.3s;
+        -o-transition: width 0.3s;
         transition: width 0.3s;
     }
+
     .search-box:hover .search-input,
     .search-input:focus {
         width: 40vw;
     }
-
 }
 
-@media screen and (max-width: 800px) { 
-    //apesar de ser mobile first fiz assim para não acrescentar  
+@media screen and (max-width: $desktop) {
+    //apesar de ser mobile first fiz assim para não acrescentar
     //demasiadas linhas de código ao "limpar" o menu.
     .menu-mobile {
         position: absolute;
@@ -92,33 +131,34 @@ header {
         right: 0;
         left: 0;
         padding: $s;
-    
         background: $light;
-    
+        -webkit-transform: translateY(calc(-100% - #{$xl}));
+        -ms-transform: translateY(calc(-100% - #{$xl}));
         transform: translateY(calc(-100% - #{$xl}));
+        -webkit-transition: -webkit-transform 0.4s ease-in-out;
+        transition: -webkit-transform 0.4s ease-in-out;
+        -o-transition: transform 0.4s ease-in-out;
         transition: transform 0.4s ease-in-out;
+        transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
         z-index: $negat-1;
     }
-    
+
     .menu-active {
+        -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
         transform: translateY(0%);
     }
-    
+
     nav {
         position: relative;
         ul {
             padding: 0;
-    
+
             li {
                 padding: $xs;
             }
         }
-    
-        a {
-            @include h4;  // ------- PASSAR PARA TIPOGRAFIA
-        }
-    
-        &::after {
+        a::after {
             position: absolute;
             content: "";
             height: 0.125rem;
@@ -128,6 +168,7 @@ header {
             right: 0;
         }
     }
+
     .search-box {
         padding-top: $m;
         input {

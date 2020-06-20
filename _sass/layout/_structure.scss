@@ -1,22 +1,17 @@
-// :root {
-//     font-size: 1em;
-// }
-
-// h4 {
-//     background: $accent-10;
-//     font-size: 2rem;
-// }
-
-
-
-
-
 body {
     margin: 0;
     & * {
         margin: 0;
         padding: 0;
         color: $dark;
+        &::-moz-selection {
+            background: $accent-75;
+            color: $light;
+        }
+        &::selection {
+            background: $accent-75;
+            color: $light;
+        }
     }
     a {
         text-decoration: none;
@@ -35,7 +30,7 @@ footer {
     padding: 0 $s;
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: $desktop) {
     .wrapper-highlight,
     .wrapper-latest,
     .wrapper-all-categories ul,
@@ -45,11 +40,14 @@ footer {
     .latest,
     .related,
     .wrapper-footer {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr $m 1fr $m 1fr $m 1fr $m 1fr $m 1fr;
         grid-template-columns: repeat(6, 1fr);
         grid-column-gap: $m;
     }
+
     main {
-        max-width: 900px;  // -------- REVER TAMANHO
+        max-width: 1000px;
     }
 }
