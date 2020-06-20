@@ -5,7 +5,7 @@ layout: default
     <div class="wrapper-profile-info">
         <img class="author-img" src="assets/img/{{ page.author | downcase | remove: ' ' }}/{{ page.image }}" alt="{{ page.author }}'s image">
         <div class="wrapper-btn">
-            {%- include buttons/btn_follow.html -%}
+            {%- include btn-follow.html -%}
         </div>
     </div>
     <h1>{{ page.author }}</h1>
@@ -22,23 +22,23 @@ layout: default
     {%- for article in site.posts -%}
         {%- if article.author == author -%}
         {% assign highlight = article.title %}
-            {%- include card_highlight.html type="hg-profile" -%}
+            {%- include card-highlight.html type="hg-profile" -%}
         {%- break -%}
         {%- endif -%}
     {%- endfor -%}
 
     {%- for article in site.posts -%}
         {%- if article.author == author and article.title != highlight -%}
-            {%- include card_article.html type="regular" -%}
+            {%- include card-article.html type="regular" -%}
         {%- endif -%}
     {%- endfor -%}
 </section>
 
 <aside class="related">
     <h2 class="breaker">Related</h2>
-    {% for article in site.related_posts limit:6 %}
+    {% for article in site.related-posts limit:6 %}
         {% if article.author != author %}
-            {%- include card_article.html type="regular" -%}
+            {%- include card-article.html type="regular" -%}
         {% endif %}
     {% endfor %}
 </aside>

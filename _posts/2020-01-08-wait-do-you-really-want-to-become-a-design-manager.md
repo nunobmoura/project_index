@@ -2,7 +2,7 @@
 layout: post
 title: "Wait, do you really want to become a design manager?"
 author: Dustin Richards
-img_header: GcDeU4f8BUJEiAxQ.jpeg
+img-header: GcDeU4f8BUJEiAxQ.jpeg
 categories:
     - Interaction Design
     - Product Design

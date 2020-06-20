@@ -2,7 +2,7 @@
 layout: post
 title: "Hey, can you ‘do the UX’ for us?"
 author: Dustin Richards
-img_header: zzSkeH7vxZ37FA.jpeg
+img-header: zzSkeH7vxZ37FA.jpeg
 categories:
     - Sketch
     - Product Design

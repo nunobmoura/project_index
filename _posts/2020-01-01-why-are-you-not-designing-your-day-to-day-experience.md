@@ -2,7 +2,7 @@
 layout: post
 title: "Why are you not designing your day-to-day experience?"
 author: Brandie Fox
-img_header: kkZdBFWxSXqrA.jpeg
+img-header: kkZdBFWxSXqrA.jpeg
 categories:
     - Web Design
     - Product Design

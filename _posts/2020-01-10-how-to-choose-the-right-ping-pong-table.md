@@ -2,7 +2,7 @@
 layout: post
 title: "How to choose the right ping pong table for your design team"
 author: Philip Edwards
-img_header: lbCJLY31bDkjid2y4z9A.jpeg
+img-header: lbCJLY31bDkjid2y4z9A.jpeg
 categories:
     - Design Process
     - Product Design

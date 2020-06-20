@@ -2,7 +2,7 @@
 layout: post
 title: "Designers: the only certainty is change"
 author: Julie Cooper
-img_header: souOAlAj2Hp8cZQ.jpeg
+img-header: souOAlAj2Hp8cZQ.jpeg
 categories:
     - Design Thinking
     - Product Design

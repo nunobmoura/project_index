@@ -4,8 +4,8 @@
             <h2>Newsletter</h2>
             <form action="#">
                 <input title="Place your name" type="text" placeholder="Your name" aria-label="Place your name">
-                <input title="Place your e-mail" type="text" placeholder="Your e-mail" aria-label="Place your e-mail">
-                <a class="subscribe-btn" href="#" role="button" title="Subscribe to newsletter">Subscribe</a>
+                <input title="Place your e-mail" type="email" name="email" required placeholder="Your e-mail" aria-label="Place your e-mail">
+                <button class="subscribe-btn" href="javascript:void(0)" role="button" title="Subscribe to newsletter">Subscribe</button>
             </form>
         </section>
         <section>
@@ -18,5 +18,5 @@
             <p>Design and devoleped with Jekyll by <a href="{{ site.linkedin }}" title="{{ site.author }}'s LinkedIn'" target="_blank" rel="noopener">{{ site.author }}</a></p>
         </section>
     </div>
-    <script src="actions.js"></script>
 </footer>
+<script src="script.js"></script>

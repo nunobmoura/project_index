@@ -9,7 +9,7 @@
         background-position: center;
         margin-bottom: $s;
     }
-    &.card_category {
+    &.card-category {
         margin-bottom: $s;
         div {
             height: calc(2 * #{$l});
@@ -75,11 +75,11 @@
     }
 }
 
-.card_category {
+.card-category {
     a {
         display: block;
         position: relative;
-        .img_category {
+        .img-category {
             mix-blend-mode: multiply;
         }
         h3 {
@@ -92,7 +92,7 @@
 }
 
 .effect {
-    @include absolute;
+    @include full-position;
     background-image: $gradient;
 }
 

@@ -2,7 +2,7 @@
 layout: post
 title: "The 5 questions you should be asking yourself all day, everyday #UX"
 author: Brandie Fox
-img_header: 0PjpB4AdecIp0tWvwLg.jpeg
+img-header: 0PjpB4AdecIp0tWvwLg.jpeg
 categories:
     - Responsive
     - Product Design

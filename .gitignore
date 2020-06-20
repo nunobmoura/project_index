@@ -5,3 +5,4 @@ _site
 vendor
 z_tasks.txt
 drafts
+.DS_Store

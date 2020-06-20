@@ -2,7 +2,7 @@
 layout: post
 title: "How UX helped me learn English"
 author: Devon Fisher
-img_header: z4HZr6L2PhYRu5USEg.jpeg
+img-header: z4HZr6L2PhYRu5USEg.jpeg
 categories:
     - Product Design
     - User Experience

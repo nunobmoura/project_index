@@ -2,7 +2,7 @@
 layout: post
 title: "You don’t need to know everything about UX"
 author: Devon Fisher
-img_header: oH07YWIshMSFu1w.jpeg
+img-header: oH07YWIshMSFu1w.jpeg
 categories:
     - User Interface
     - Product Design

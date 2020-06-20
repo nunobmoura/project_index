@@ -2,7 +2,7 @@
 layout: post
 title: "The lies we tell ourselves as designers"
 author: Julie Cooper
-img_header: Dy8ViGQiHk8SB8K5w.jpeg
+img-header: Dy8ViGQiHk8SB8K5w.jpeg
 categories:
     - Usability
     - Product Design

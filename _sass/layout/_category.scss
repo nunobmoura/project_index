@@ -7,8 +7,8 @@
     div {
         border-radius: $s;
     }
-    .category_header {
-        @include absolute;
+    .category-header {
+        @include full-position;
         mix-blend-mode: multiply;
         background-repeat: no-repeat;
         background-size: cover;

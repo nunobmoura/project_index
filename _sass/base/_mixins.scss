@@ -1,5 +1,5 @@
 /*  ---  Buttons  ---  */
-@mixin absolute {
+@mixin full-position { // dizer o que faz
     position: absolute;
     top: 0;
     right: 0;
@@ -25,7 +25,7 @@
 }
 
 /*  ---  Effects  ---  */
-@mixin header {
+@mixin header-effects {
     -webkit-box-shadow: 0px 0px 50px $dark-10;
     box-shadow: 0px 0px 50px $dark-10;
     -webkit-backdrop-filter: blur(7px);
@@ -40,7 +40,6 @@
 @mixin link-hover {
     border-bottom: 0.125rem solid $accent;
     -webkit-transition: all 0.1s ease;
-    -o-transition: all 0.1s ease;
     transition: all 0.1s ease;
     &:hover {
         color: $light;

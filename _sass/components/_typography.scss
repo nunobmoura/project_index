@@ -11,7 +11,7 @@ nav {
 }
 
 .breaker {
-    @include h2_reg;
+    @include h2-reg;
 }
 
 p {
@@ -31,7 +31,7 @@ p {
             @include h2;
         }
     }
-    &.card_category {
+    &.card-category {
         h3 {
             @include h3;
         }
@@ -57,15 +57,15 @@ p {
     p {
         @include article;
         strong {
-            @include article_bd;
+            @include article-bd;
         }
     }
     blockquote p {
-        @include h3_it;
+        @include h3-it;
     }
 
     .caption {
-        @include cap_it;
+        @include cap-it;
         text-align: center;
     }
     h2 {
@@ -75,7 +75,7 @@ p {
         li {
             @include article;
             strong {
-                @include article_bd;
+                @include article-bd;
             }
             &::before {
                 content: "—";
@@ -85,6 +85,12 @@ p {
                 width: 1.5rem;
             }
         }
+    }
+}
+
+.about-index {
+    p {
+        @include article;
     }
 }
 

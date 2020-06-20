@@ -2,12 +2,11 @@
     width: 100%;
     max-height: 40vh;
     margin-bottom: $l;
-    -o-object-fit: cover;
     object-fit: cover;
     @include card-shadow;
 }
 
-.wrapper_author {
+.wrapper-author {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -95,7 +94,7 @@
 
     .wrapper-main-post {
         h1,
-        .wrapper_author,
+        .wrapper-author,
         .wrapper-post,
         .post-aside {
             -ms-grid-column: 2;

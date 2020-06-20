@@ -1,4 +1,4 @@
 ---
-layout: default
+layout: all-categories
 title: Category
 ---

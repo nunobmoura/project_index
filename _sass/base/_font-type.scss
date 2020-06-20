@@ -17,7 +17,7 @@ html * {
     line-height: 150%;
 }
 
-@mixin h2_reg {
+@mixin h2-reg {
     @include h2;
     font-weight: 400;
 }
@@ -28,7 +28,7 @@ html * {
     line-height: 150%;
 }
 
-@mixin h3_it {
+@mixin h3-it {
     @include h3;
     font-style: italic;
 }
@@ -45,7 +45,7 @@ html * {
     line-height: 170%;
 }
 
-@mixin article_bd {
+@mixin article-bd {
     @include article;
     font-weight: 600;
 }
@@ -62,7 +62,7 @@ html * {
     line-height: 170%;
 }
 
-@mixin cap_it {
+@mixin cap-it {
     font-weight: 400;
     font-style: italic;
     font-size: 0.75rem;

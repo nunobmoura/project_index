@@ -1,4 +1,4 @@
-.follow_btn {
+.follow-btn {
     padding: calc(#{$xs} / 2) calc(#{$l} / 2);
     @include btn-border-dark;
     &:hover {
@@ -9,6 +9,7 @@
 .subscribe-btn {
     padding: calc(#{$xs} / 2) $s;
     margin-top: $xs;
+    background: none;
     @include btn-border-dark;
     &:hover {
         @include btn-hover;
@@ -16,7 +17,7 @@
 
 }
 
-.catg_article {
+.catg-article {
     @include btn-border-accent;
     padding: $xs $s;
     margin: 0 $xs $xs 0;

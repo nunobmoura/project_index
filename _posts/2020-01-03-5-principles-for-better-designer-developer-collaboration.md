@@ -2,7 +2,7 @@
 layout: post
 title: "5 principles for better designer-developer collaboration"
 author: Philip Edwards
-img_header: mbfd9bsrroX9ktZ.jpg
+img-header: mbfd9bsrroX9ktZ.jpg
 categories:
     - User Experience
     - Product Design

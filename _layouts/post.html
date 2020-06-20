@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-<img class="post-img" src="assets/img/{{ page.author | downcase | remove: ' ' }}/{{ page.img_header }}" alt="Image from {{ page.title }}">
+<img class="post-img" src="assets/img/{{ page.author | downcase | remove: ' ' }}/{{ page.img-header }}" alt="Image from {{ page.title }}">
 
 <section class="wrapper-main-post">
   <h1>{{ page.title }}</h1>
 
-  <div class="wrapper_author">
+  <div class="wrapper-author">
     {%- for writer in site.profiles -%}
       {%- if writer.author == page.author -%}
         <img class="author-img" src="assets/img/{{ writer.author | downcase | remove: ' ' }}/{{ writer.image }}" alt="{{ page.author }}'s image">
@@ -16,7 +16,7 @@ layout: default
             <p>{{ page.date | date: "%b %Y" }}</p>
           </div>
           <div class="wrapper-btn">
-            {%- include buttons/btn_follow.html -%}
+            {%- include btn-follow.html -%}
           </div>
         </div>
       {%- endif -%}
@@ -32,7 +32,7 @@ layout: default
       {%- for catg in page.categories -%}
         {%- for category in site.categories -%}
           {%- if catg == category.title -%}
-            <a href="{{ site.baseurl }}{{ category.url }}" class="catg_article" title="Category {{ catg }}">{{ catg }}</a>
+            <a href="{{ site.baseurl }}{{ category.url }}" class="catg-article" title="Category {{ catg }}">{{ catg }}</a>
           {%- endif -%}
         {%- endfor -%}
       {%- endfor -%}
@@ -50,7 +50,7 @@ layout: default
 
   {%- for article in site.posts -%}
     {%- if article.title != page.title and article.author == page.author -%}
-      {%- include card_article.html type="regular" -%}
+      {%- include card-article.html type="regular" -%}
     {%- endif -%}
   {%- endfor -%}
 </aside>

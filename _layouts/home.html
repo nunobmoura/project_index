@@ -12,9 +12,9 @@ layout: default
     {%- if article.highlight == true -%}
       {%- assign counter = counter | plus: 1 -%}
       {%- if counter <= 1 -%}
-        {%- include card_highlight.html type="home" -%}
+        {%- include card-highlight.html type="home" -%}
       {%- elsif counter <= 4 -%}
-        {%- include card_article.html type="highlight" -%}
+        {%- include card-article.html type="highlight" -%}
       {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
@@ -27,14 +27,13 @@ layout: default
     {%- if article.highlight != true -%}
       {%- assign counter = counter | plus: 1 -%}
       {%- if counter <= 6 -%}
-        {%- include card_article.html type="regular" -%}
+        {%- include card-article.html type="regular" -%}
       {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
-  <!-- <div class="bg"></div> -->
 </section>
 
 <section class="wrapper-all-categories">
   <h2 class="breaker">Categories</h2>
-  {%- include cards_categories.html -%}
+  {%- include cards-categories.html -%}
 </section>
