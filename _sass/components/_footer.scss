@@ -19,9 +19,8 @@ footer {
         p a {
             white-space: nowrap;
             color: $dark;
-            border-bottom: 2px solid $accent;
-            transition: color 0.1s ease, 
-                    background-color 0.1s ease;
+            border-bottom: 0.125rem solid $accent;
+            transition: all 0.1s ease;
             &:hover {
                 color: $light;
                 background-color: $accent;
@@ -38,7 +37,7 @@ footer {
     input {
         width: 100%;
         background: $light;
-        border: 1px solid $dark;
+        border: 0.125rem solid $dark;
         border-radius: $xs;
         margin-bottom: $xs;
         padding-left: $xs;
@@ -50,12 +49,8 @@ footer {
 }
 
 .wrapper-footer {
-    max-width: 900px;
+    max-width: 900px;  // ------- REVER tamanho
     margin: 0 auto;
-}
-
-.active {
-    background: red;
 }
 
 @media screen and (min-width: 800px){

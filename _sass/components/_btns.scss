@@ -1,10 +1,10 @@
 .follow_btn {
-    padding: 4px 24px;
-    border: 2px solid $dark;
+    padding: calc(#{$xs} / 2) calc(#{$l} / 2);
+    border: 0.125rem solid $dark;
     color: $dark;
-    border-radius: 30px;
+    border-radius: $xl;
     &:hover {
-        border: 2px solid $accent;
+        border: 0.125rem solid $accent;
         color: $accent;
     }
 }
@@ -12,11 +12,11 @@
 .subscribe-btn {
     padding: calc(#{$xs} / 2) $s;
     margin-top: $xs;
-    border: 2px solid $dark;
+    border: 0.125rem solid $dark;
     color: $dark;
     border-radius: $xl;
     &:hover {
-        border: 2px solid $accent;
+        border: 0.125rem solid $accent;
         color: $accent;
     }
 
@@ -24,7 +24,7 @@
 
 .catg_article {
     color: $dark;
-    background: $accent-75;
+    border: 0.125rem solid $accent-75;
     border-radius: $xl;
     padding: $xs $s;
     margin: 0 $xs $xs 0;

@@ -42,11 +42,11 @@ header {
     input {
         background: none;
         border: none;
-        border-bottom: 1px solid $middle;
+        border-bottom: 0.125rem solid $middle;
         margin-right: $xs;
 
         &:focus {
-            border-bottom: 2px solid $dark;
+            border-bottom: 0.125rem solid $dark;
         }
     }
 
@@ -115,13 +115,13 @@ header {
         }
     
         a {
-            @include h4;
+            @include h4;  // ------- PASSAR PARA TIPOGRAFIA
         }
     
         &::after {
             position: absolute;
             content: "";
-            height: 1px;
+            height: 0.125rem;
             background: $middle;
             bottom: -$s;
             left: 0;

@@ -17,7 +17,8 @@ p {
     h3 {
         @include h4;
     }
-    &.home {
+    &.home,
+    &.hg-profile {
         h3 {
             @include h2;
         }

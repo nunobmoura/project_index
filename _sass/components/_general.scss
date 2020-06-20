@@ -1,3 +1,8 @@
+*::selection {
+    background: $accent-75;
+    color: $light;
+}
+
 .breaker {
     position: relative;
     padding-top: $s;
@@ -6,7 +11,7 @@
     &::after {
         position: absolute;
         content: "";
-        height: 2px;
+        height: 0.125rem;
         background: $accent;
         bottom: 0.25rem;
         left: 0;

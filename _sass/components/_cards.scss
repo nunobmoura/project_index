@@ -39,32 +39,33 @@
     margin-bottom: $m;
     position: relative;
     a {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: $s;
-    grid-template-areas: 
-    "img writer writer"
-    "img title title"
-    "img title title";
-    div {
-        grid-area: img;
-        height: $xxl;
-    }
-    p {
-        grid-area: writer;
-    }
-    h3 {
-        grid-area: title;
-    }
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: $s;
+        grid-template-areas:
+            "img writer writer"
+            "img title title"
+            "img title title";
+        div {
+            grid-area: img;
+            height: $xxl;
+        }
+        p {
+            grid-area: writer;
+        }
+        h3 {
+            grid-area: title;
+        }
     }
 }
+
 .highlight {
     &::before {
         position: absolute;
         content: "";
-        height: 1px;
+        height: 0.0625rem;
         background: $middle;
-        bottom: - $s;
+        bottom: -$s;
         left: 0;
         right: 0;
     }
@@ -98,12 +99,20 @@
     background-image: $gradient;
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 800px) {
     .home,
     .hg-profile {
         .description {
             display: block;
             padding-top: $s;
         }
-}
+    }
+    .hg-profile {
+        div {
+            height: auto;
+        }
+        .description {
+            margin-bottom: $s;
+        }
+    }
 }

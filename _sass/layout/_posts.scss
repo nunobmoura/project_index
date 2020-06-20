@@ -3,6 +3,7 @@
     max-height: 40vh;
     margin-bottom: $l;
     object-fit: cover;
+    box-shadow: 0px 7px 20px rgba(15, 15, 89, 0.2);
 }
 
 .wrapper_author {
@@ -35,11 +36,11 @@
     }
     hr {
         margin: $m 0;
-        border: 1px solid $middle;
+        border: 0.125rem solid $middle;
     }
     blockquote {
         margin: $xl 0 $xl $s;
-        border-left: 3px solid $accent;
+        border-left: 0.25rem solid $accent;
         padding-left: $s;
     }
 
@@ -50,9 +51,8 @@
         }
     }
     p a {
-        border-bottom: 2px solid $accent;
-        transition: color 0.1s ease, 
-                    background-color 0.1s ease;
+        border-bottom: 0.125rem solid $accent;
+        transition: all 0.1s ease;
         &:hover {
             color: $light;
             background-color: $accent;
@@ -76,10 +76,14 @@
     }
 }
 
+.origin a {
+    color: $accent;
+}
+
 .post-aside {
     margin: $xl 0 $m 0;
     padding-bottom: $s;
-    border-bottom: 1px solid $accent;
+    border-bottom: 0.125rem solid $accent;
     .wrapper-catg {
         display: flex;
         flex-wrap: wrap;
