@@ -11,9 +11,13 @@ layout: default
       {%- if writer.author == page.author -%}
         <img class="author-img" src="assets/img/{{ writer.author | downcase | remove: ' ' }}/{{ writer.image }}" alt="{{ page.author }}'s image">
         <div class="author-info">
-          <p><a href="{{ site.baseurl }}{{ writer.url }}" title="Author {{ page.author }}'s page">{{ page.author }}</a></p>
-          <p>{{ page.date | date: "%b %Y" }}</p>
-          {%- include buttons/btn_follow.html -%}
+          <div class="wrapper-info">
+            <p><a href="{{ site.baseurl }}{{ writer.url }}" title="Author {{ page.author }}'s page">{{ page.author }}</a></p>
+            <p>{{ page.date | date: "%b %Y" }}</p>
+          </div>
+          <div class="wrapper-btn">
+            {%- include buttons/btn_follow.html -%}
+          </div>
         </div>
       {%- endif -%}
     {%- endfor -%}

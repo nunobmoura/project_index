@@ -1,0 +1,115 @@
+.wrapper-homepage {
+    @include h1;
+}
+
+.breaker {
+    @include h2_reg;
+}
+
+p {
+    @include body;
+}
+
+.card {
+    .author-tag {
+        @include h5;
+    }
+    h3 {
+        @include h4;
+    }
+    &.home {
+        h3 {
+            @include h2;
+        }
+    }
+    &.card_category {
+        h3 {
+            @include h3;
+        }
+    }
+}
+
+.wrapper-main-post {
+    h1 {
+        @include h2;
+        text-align: center;
+    }
+    .author-info {
+        p {
+            @include h5;
+            a {
+                @include h4;
+            }
+        }
+    }
+}
+
+.wrapper-post {
+    p {
+        @include article;
+        strong {
+            @include article_bd;
+        }
+    }
+    blockquote {
+        p {
+        @include h3_it;
+        }
+    }
+
+    .caption {
+        @include cap_it;
+        text-align: center;
+    }
+    h2 {
+        @include h3;
+    }
+    ul {
+        li {
+            @include article;
+            strong {
+                @include article_bd;
+            }
+            &::before {
+                content: "—";
+                color: $accent;
+                font-weight: bold;
+                display: inline-block;
+                width: 1.5rem;
+            }
+        }
+    }
+}
+
+.wrapper-header {
+    h1 {
+        @include h1;
+    }
+}
+
+.wrapper-profile {
+    h1 {
+        @include h2;
+    }
+}
+
+// --------- Footer ---------
+
+.wrapper-footer {
+    h2 {
+        @include h3;
+        color: $accent;
+    }
+}
+
+input::placeholder {
+    color: $middle;
+    @include body;
+}
+
+// --------- Header ---------
+nav {
+    a {
+        @include h4;
+    }
+}

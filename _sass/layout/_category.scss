@@ -3,6 +3,12 @@
     height: 40vh;
     position: relative;
     margin-bottom: $xl;
+    border-radius: $xl;
+
+    div {
+        border-radius: $s;
+    }
+    
     .category_header {
         position: absolute;
         top: 0;

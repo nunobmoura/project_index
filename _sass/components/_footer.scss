@@ -26,23 +26,19 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
-
-        a {
-            flex-basis: auto;
-            padding: calc(#{$xs} / 2) $s;
-            margin-top: $xs;
-            border: 1px solid $dark;
-            border-radius: $xl;
-        }
     }
 
     input {
         width: 100%;
-        background: none;
+        background: $light;
         border: 1px solid $dark;
         border-radius: $xs;
         margin-bottom: $xs;
         padding-left: $xs;
+    }
+
+    .subscribe-btn {
+        flex-basis: auto;
     }
 }
 

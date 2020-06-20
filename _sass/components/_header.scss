@@ -15,6 +15,17 @@ header {
 
     a {
         padding: 0 $s;
+        .logo_light {
+            animation-name: coloring;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes coloring {
+            0%   {fill: $dark;}
+            20%  {fill: $accent;}
+            80%  {fill: $accent;}
+            100% {fill: $dark;}
+          }
     }
 }
 
@@ -29,10 +40,6 @@ header {
 
         &:focus {
             border-bottom: 2px solid $dark;
-        }
-
-        &::placeholder {
-            color: $middle;
         }
     }
 
@@ -56,12 +63,13 @@ header {
             display: flex;
         }
     }
-    input {
+    
+    .search-input {
         width: 0;
         transition: width 0.3s;
     }
-    form:hover input,
-    input:focus {
+    .search-box:hover .search-input,
+    .search-input:focus {
         width: 40vw;
     }
 

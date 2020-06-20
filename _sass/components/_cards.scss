@@ -38,24 +38,13 @@
 .related .regular {
     margin-bottom: $m;
     position: relative;
-    &::before {
-        position: absolute;
-        content: "";
-        height: 1px;
-        background: $middle;
-        bottom: - $s;
-        left: 0;
-        right: 0;
-    }
-    &:last-child::before {
-        display: none;
-    }
     a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: $s;
     grid-template-areas: 
     "img writer writer"
+    "img title title"
     "img title title";
     div {
         grid-area: img;
@@ -69,10 +58,18 @@
     }
     }
 }
-
-.wrapper-latest {
-    .regular * {
-        color: $light;
+.highlight {
+    &::before {
+        position: absolute;
+        content: "";
+        height: 1px;
+        background: $middle;
+        bottom: - $s;
+        left: 0;
+        right: 0;
+    }
+    &:last-child::before {
+        display: none;
     }
 }
 

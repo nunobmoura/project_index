@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap');
 
 html * {
     font-size: 100%;
-    font-family: "Sarabun", sans-serif;
+    font-family: 'Sarabun', sans-serif;
 }
 
 @mixin h1 {
@@ -12,22 +12,25 @@ html * {
 }
 
 @mixin h2 {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.75rem;
     line-height: 150%;
 }
 
+@mixin h2_reg {
+    @include h2;
+    font-weight: 400;
+}
+
 @mixin h3 {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.25rem;
     line-height: 150%;
 }
 
 @mixin h3_it {
-    font-weight: 700;
+    @include h3;
     font-style: italic;
-    font-size: 1.25rem;
-    line-height: 150%;
 }
 
 @mixin h4 {
@@ -44,7 +47,7 @@ html * {
 
 @mixin article_bd {
     @include article;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 @mixin body {

@@ -1,25 +1,18 @@
 .wrapper-latest {
     position: relative;
-    padding: $m 0;
-    .bg {
-        position: absolute;
-        top: 0;
-        right: - $s;
-        bottom: 0;
-        left: - $s;
-        background: $dark;
-        z-index: $negat-1;
-    }
-    h2 {
-        color: $light;
-        padding-bottom: $s;
-    }
+    //padding: $m 0;
+    // .bg {
+    //     position: absolute;
+    //     top: 0;
+    //     right: - $s;
+    //     bottom: 0;
+    //     left: - $s;
+    //     background: $dark;
+    //     z-index: $negat-1;
+    // }
 }
 
 @media screen and (min-width: 800px){
-    .breaker {
-        grid-column: span 6;
-    }
     .wrapper-highlight {
         .home {
             grid-column: span 3;
@@ -36,5 +29,8 @@
     }
     .card_category {
         grid-column: span 2;
+    }
+    .wrapper-homepage {
+        padding: $m 0 $xl;
     }
 }

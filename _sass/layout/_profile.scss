@@ -2,9 +2,9 @@
     position: relative;
     padding: $m 0 $l 0;
     &-info {
+        padding-bottom: $s;
         display: flex;
         justify-content: space-between;
-        padding-bottom: $s;
         .author-img {
             width: $xl;
             height: $xl;
@@ -19,7 +19,7 @@
         left: - $s;
         z-index: $negat-1;
 
-        background: $accent-10;
+        // background: $accent-10;
     }
 }
 

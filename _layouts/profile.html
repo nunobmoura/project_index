@@ -4,7 +4,9 @@ layout: default
 <div class="wrapper-profile">
     <div class="wrapper-profile-info">
         <img class="author-img" src="assets/img/{{ page.author | downcase | remove: ' ' }}/{{ page.image }}" alt="{{ page.author }}'s image">
-        {%- include buttons/btn_follow.html -%}
+        <div class="wrapper-btn">
+            {%- include buttons/btn_follow.html -%}
+        </div>
     </div>
     <h1>{{ page.author }}</h1>
 

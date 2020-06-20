@@ -7,6 +7,10 @@
 //     font-size: 2rem;
 // }
 
+
+
+
+
 body {
     margin: 0;
     & * {
@@ -23,16 +27,11 @@ body {
 }
 
 main {
-    max-width: 900px;
-    margin: 0 auto;
-    margin-top: $xl;
+    margin: calc(#{$xl} + #{$m}) auto 0;
+    padding: 0 $s $l;
 }
 
-main,
 footer {
-    // display: grid;
-    // grid-template-columns: 1fr;
-    // grid-row-gap: $m;
     padding: 0 $s;
 }
 
@@ -49,5 +48,8 @@ footer {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-column-gap: $m;
+    }
+    main {
+        max-width: 900px;
     }
 }
