@@ -18,7 +18,14 @@ footer {
 
         p a {
             white-space: nowrap;
-            color: $accent;
+            color: $dark;
+            border-bottom: 2px solid $accent;
+            transition: color 0.1s ease, 
+                    background-color 0.1s ease;
+            &:hover {
+                color: $light;
+                background-color: $accent;
+            }
         }
     }
 

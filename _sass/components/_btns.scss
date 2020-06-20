@@ -12,8 +12,8 @@
 .subscribe-btn {
     padding: calc(#{$xs} / 2) $s;
     margin-top: $xs;
-    border: 2px solid $middle;
-    color: $middle;
+    border: 2px solid $dark;
+    color: $dark;
     border-radius: $xl;
     &:hover {
         border: 2px solid $accent;

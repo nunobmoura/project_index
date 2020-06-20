@@ -27,6 +27,13 @@ header {
             100% {fill: $dark;}
           }
     }
+
+    nav a {
+        transition: color 0.1s ease;
+        &:hover {
+            color: $accent;
+        }
+    }
 }
 
 .search-box {
