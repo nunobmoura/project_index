@@ -36,7 +36,7 @@ layout: default
 
 <aside class="related">
     <h2 class="breaker">Related</h2>
-    {% for article in site.related-posts limit:6 %}
+    {% for article in site.related_posts limit:6 %}
         {% if article.author != author %}
             {%- include card-article.html type="regular" -%}
         {% endif %}
